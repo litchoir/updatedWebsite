@@ -243,12 +243,9 @@ div.insideText p {
 
 #alumni p {
   font-size: 18px;
-  text-align: center;
+  text-align: left;
 }
 
-#alumni li {
-  font-size: 15px;
-}
 
 .pplDrop a {
   width: 110.91px !important;
@@ -375,7 +372,7 @@ span.songTitle {
 
 ul.pagination li a {
   color: white;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 
