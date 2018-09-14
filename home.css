@@ -1,21 +1,65 @@
+body {
+  font-family: 'Forum', cursive;
+}
+
 @font-face {
   font-family: GalaxiePolaris;
   src: url('./GalaxiePolaris-Medium.otf');
 }
+
 
 @font-face {
   font-family: GalaxiePolarisCondensed;
   src: url('./GalaxiePolarisCondensed-Medium.otf');
 }
 
-body {
-  font-family: 'Forum', cursive;
+/* label focus color */
+ .input-field input[type=text]:focus {
+   color: rgba(90,171,188,0.5) !important;
+ }
+
+#titleBar {
+  background-color: rgb(177, 141, 3);
+  margin-bottom: 0px;
+  height: 50px;
+  background-image: url('https://static.nd.edu/images/brandbar/dept-nd-white@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#brandBar {
+  color: white;
+}
+
+#brandBar i {
+  color: white !important;
+}
+
+#brandRow {
+  background-color: #002b5c;
+  height: 125px;
+  margin-bottom: 0px;
+}
+
+#brandRow .col.s8 {
+  padding-right: 0px;
+}
+
+#searchBar {
+  margin-top: 40px;
+  padding-right: 30px;
+}
+
+div.input-field.inline {
+  width: 100%;
+
 }
 
 .navbar {
   text-align: center;
   /* font-family: GalaxiePolarisCondensed !important; */
-  background-color: #316ac6;
+  background-color: #002b5c;
 }
 
 .navbar a {
@@ -28,15 +72,15 @@ body {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  background-color: #316ac6;
+  background-color: #002b5c;
   color: white;
   font-size: 22px;
-  border: 2px solid #316ac6;;
+  border: 2px solid #002b5c;
   float: left;
 }
 
 .element a:hover {
-  background-color: rgb(215,180,74);
+  background-color: rgb(177, 141, 3);
 }
 
 .element {
@@ -61,7 +105,7 @@ body {
 }
 
 .contained a:hover {
-  background-color: rgb(215,180,74);
+  background-color: rgb(177, 141, 3);
 }
 
 .dropdown:hover .contained {
@@ -69,7 +113,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: rgb(215,180,74);;
+  background-color: rgb(177, 141, 3);;
 }
 
 h1, h2, h3{
@@ -117,7 +161,7 @@ td {
   font-size: 15px;
   margin-bottom: 0px;
   text-align: center;
-  background-color: rgb(215,180,74);
+  background-color: rgb(177, 141, 3);
 }
 
 #NDlogo {
@@ -157,7 +201,7 @@ iframe {
 }
 
 .card {
-  background-color: rgba(13, 106, 198,0.9);
+  background-color: #002b5c;
 }
 
 
@@ -209,7 +253,7 @@ div.insideText p {
 .collection a:hover {
   font-size: 25px;
   color: white !important;
-  background-color: rgb(49, 106, 198) !important;
+  background-color: #002b5c !important;
 }
 
 .card-title:not(.moreinfo) {
@@ -220,7 +264,7 @@ div.insideText p {
 }
 
 #people .card-content {
-  background-color: #316ac6;
+  background-color: #002b5c;
 }
 
 
@@ -231,14 +275,28 @@ div.insideText p {
 }
 
 #people .card-action {
-  background-color: rgb(215,180,74) !important;
+  background-color: rgb(177, 141, 3) !important;
   display: none;
 }
 
-.btn {
+
+a#supportBtn {
+  margin-left: 20px;
+  width: 90%;
+  display: block;
+  background-color: rgba(90,171,188,0.5);
+  /* padding-left: 50px; */
+}
+
+/* #giveBtn {
+  margin-top: 25px;
+  display: none;
+} */
+
+#requestBtn {
   margin: auto;
   display: block;
-  width: 160px;
+  max-width: 160px;
 }
 
 #alumni p {
@@ -362,7 +420,7 @@ span.songTitle {
 }
 
 .pagination {
-  background-color: #316ac6;
+  background-color: #002b5c;
   position: sticky;
   position: -webkit-sticky;
   top: 0px;
@@ -377,7 +435,7 @@ ul.pagination li a {
 
 
 ul.pagination li.active a {
-  background-color: rgb(215,180,74);
+  background-color: rgb(177, 141, 3);
 }
 
 ul.pagination li a i.material-icons {
