@@ -41,8 +41,15 @@
         $('#searchBar').css('margin-top','60px');
         $('#supportBtn').css('margin-top','80px');
       }
-      else if ($(window).width() < 586) {
+      else if ($(window).width() < 586 && $(window).width() >= 444) {
         $('#brandRow').css('height','270px');
+        $('#searchBar').css('margin-top','80px');
+        $('#supportBtn').css('margin-top','100px');
+      }
+      else if ($(window).width() < 444 && $(window).width() >= 444) {
+        $('#brandRow').css('height','340px');
+        $('#searchBar').css('margin-top','100px');
+        $('#supportBtn').css('margin-top','120px');
       }
 
       // Button renaming
