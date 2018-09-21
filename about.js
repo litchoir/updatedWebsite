@@ -62,6 +62,16 @@
         $('#searchBar').css('visibility','hidden');
       }
 
+      // Column Squishing
+
+      if ($(window).width() < 800) {
+        $('#triple-threat').css('display','none');
+      }
+      else if ($(window).width() >= 800) {
+        $('#triple-threat').css('display','block');
+      }
+
+
   }
 
   function switchIcons() {
