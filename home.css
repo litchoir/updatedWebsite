@@ -185,12 +185,12 @@ td {
 } */
 
 .collapsible-header {
-   font-size: 19px;
+   font-size: 23px;
    font-weight: bold;
 }
 
 .collapsible-body {
-  font-size: 16px;
+  font-size: 19px;
 }
 
 .collapsible-body li b {
@@ -304,7 +304,7 @@ a#supportBtn {
 }
 
 #alumni p {
-  font-size: 18px;
+  font-size: 22px;
   text-align: left;
 }
 
@@ -470,6 +470,10 @@ h3 i.material-icons {
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
+}
+
+#alumniSteps {
+  font-size: 22px;
 }
 
 .icons-container, .alumni-container {
