@@ -300,7 +300,7 @@ a#supportBtn {
 #requestBtn {
   margin: auto;
   display: block;
-  max-width: 160px;
+  max-width: 190px;
 }
 
 #alumni p {
@@ -439,7 +439,7 @@ span.songTitle {
 
 ul.pagination li a {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 
