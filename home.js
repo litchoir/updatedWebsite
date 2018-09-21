@@ -49,6 +49,7 @@
         $('#brandRow').css('height','330px');
       }
 
+
       // Button renaming
 
       if ($(window).width() >= 1211) {
@@ -64,6 +65,15 @@
       else if ($(window).width() < 717) {
         $('#supportBtn').css('visibility','hidden');
         $('#searchBar').css('visibility','hidden');
+      }
+
+      // Who & news
+
+      if ($(window).width() < 638) {
+        $('#who-News').css('display','none');
+      }
+      else if ($(window).width() >= 638) {
+        $('#who-News').css('display','block');
       }
 
   }
