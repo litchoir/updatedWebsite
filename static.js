@@ -12,16 +12,16 @@
       console.log("in navbar!")
       // Navbar and line stuff
 
-      if ($(window).width() >= 837) {
-         $('.navbar').css('height','47px');
+      if ($(window).width() >= 884) {
+         $('.navbar').css('height','50px');
          $('.navbar').css('padding','0px');
       }
-      else if ($(window).width() >= 467 && $(window).width() < 837) {
-        $('.navbar').css('height','103px');
+      else if ($(window).width() >= 493 && $(window).width() < 884) {
+        $('.navbar').css('height','110px');
         $('.navbar').css('padding','3px');
       }
-      else if ($(window).width() < 467) {
-         $('.navbar').css('height','158px');
+      else if ($(window).width() < 493) {
+         $('.navbar').css('height','166px');
          $('.navbar').css('padding','3px');
       }
       if ($(window).width() >= 1055) {

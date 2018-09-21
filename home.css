@@ -74,7 +74,7 @@ div.input-field.inline {
   display: inline-block;
   background-color: #002b5c;
   color: white;
-  font-size: 26px;
+  font-size: 24px;
   border: 2px solid #002b5c;
   float: left;
 }
@@ -93,7 +93,7 @@ div.input-field.inline {
   display: none;
   position: absolute;
   z-index: 1;
-  top: 45px;
+  top: 47px;
 }
 
 .contained a {
@@ -310,15 +310,15 @@ a#supportBtn {
 
 
 .pplDrop a {
-  width: 110.91px !important;
+  width: 116.08px !important;
 }
 
 .tourDrop a {
-  width: 101.97px;
+  width: 106.33px;
 }
 
 .recDrop a {
-  width: 152.13px;
+  width: 161.05px;
 }
 
 .slider {
