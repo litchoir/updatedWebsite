@@ -77,6 +77,17 @@
         $('#who-News').css('display','block');
       }
 
+      // Bottom stuff
+
+      if ($(window).width() < 1000) {
+        $('.smallBottom').css('display','block');
+        $('.bigBottom').css('display','none');
+      }
+      else {
+        $('.smallBottom').css('display','none');
+        $('.bigBottom').css('display','block');
+      }
+
   }
 
   function slideshow() {

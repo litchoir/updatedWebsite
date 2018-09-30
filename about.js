@@ -27,7 +27,7 @@
          $('.navbar').css('height','166px');
          $('.navbar').css('padding','3px');
       }
-      
+
       if ($(window).width() >= 1055) {
         $('#searchBar').css('margin-top','37px');
         $('#brandRow').css('height','150px');
@@ -61,6 +61,17 @@
       else if ($(window).width() < 717) {
         $('#supportBtn').css('visibility','hidden');
         $('#searchBar').css('visibility','hidden');
+      }
+
+      // Bottom stuff
+
+      if ($(window).width() < 1000) {
+        $('.smallBottom').css('display','block');
+        $('.bigBottom').css('display','none');
+      }
+      else {
+        $('.smallBottom').css('display','none');
+        $('.bigBottom').css('display','block');
       }
 
       // Column Squishing
