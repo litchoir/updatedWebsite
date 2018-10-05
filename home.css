@@ -22,10 +22,10 @@ body {
   background-color: rgb(177, 141, 3);
   height: 50px;
   margin-bottom: 0px;
-  background-image: url('https://static.nd.edu/images/brandbar/dept-nd-gray.png'), url('https://static.nd.edu/images/brandbar/dept-staf-white@2x.png');
+  background-image: url('https://www.nd.edu/assets/images/brandbar/dept-nd-blue@2x.png'), url('https://www.nd.edu/assets/images/brandbar/dept-staf-blue@2x.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: 10%, 90%;
+  background-position: 5%, 95%;
 }
 
 #titleBar {
