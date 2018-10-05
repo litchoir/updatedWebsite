@@ -18,14 +18,24 @@ body {
    color: rgba(90,171,188,0.5) !important;
  }
 
-#titleBar {
+#titleRow {
   background-color: rgb(177, 141, 3);
-  margin-bottom: 0px;
   height: 50px;
-  background-image: url('https://static.nd.edu/images/brandbar/dept-nd-white@2x.png');
+  margin-bottom: 0px;
+  background-image: url('https://static.nd.edu/images/brandbar/dept-nd-gray.png'), url('https://static.nd.edu/images/brandbar/dept-staf-white@2x.png');
   background-size: contain;
   background-repeat: no-repeat;
-  background-position: left;
+  background-position: 10%, 90%;
+}
+
+#titleBar {
+
+
+
+}
+
+#titleBar2 {
+
 }
 
 #brandBar {
