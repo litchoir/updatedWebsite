@@ -70,6 +70,19 @@
         $('.bigBottom').css('display','block');
       }
 
+      // Header stuff
+
+      if ($(window).width() < 700) {
+        $('#titleRowUND').css('display','block');
+        $('#titleRowDSA').css('display','block');
+        $('#titleRow').css('display','none')
+      }
+      else {
+        $('#titleRowUND').css('display','none');
+        $('#titleRowDSA').css('display','none');
+        $('#titleRow').css('display','block');
+      }
+
   }
 
 

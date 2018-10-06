@@ -28,14 +28,25 @@ body {
   background-position: 5%, 95%;
 }
 
-#titleBar {
-
-
-
+#titleRowUND {
+  background-color: rgb(177, 141, 3);
+  height: 50px;
+  margin-bottom: 0px;
+  border-bottom: 1.5px solid #002b5c;
+  background-image: url('https://www.nd.edu/assets/images/brandbar/dept-nd-blue@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-#titleBar2 {
-
+#titleRowDSA {
+  background-color: rgb(177, 141, 3);
+  height: 50px;
+  margin-bottom: 0px;
+  background-image: url('https://www.nd.edu/assets/images/brandbar/dept-staf-blue@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 #brandBar {
@@ -502,17 +513,6 @@ h3 i.material-icons {
   color: black;
 }
 
-/* #directorNote div #startQuote {
-  font-family: 'Playfair Display', serif;
-  font-size: 50px;
-  left: -30px;
-  top: -30px;
-}
-
-#directorNote div #endQuote {
-  font-size: 50px;
-  line-height: 50px;
-} */
 
 div#directorNote {
   font-family: 'Bellefair', serif;
