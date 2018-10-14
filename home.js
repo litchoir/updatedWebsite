@@ -70,12 +70,12 @@
 
       // Who & news
 
-      if ($(window).width() < 638) {
-        $('#who-News').css('display','none');
-      }
-      else if ($(window).width() >= 638) {
-        $('#who-News').css('display','block');
-      }
+      // if ($(window).width() < 638) {
+      //   $('#who-News').css('display','none');
+      // }
+      // else if ($(window).width() >= 638) {
+      //   $('#who-News').css('display','block');
+      // }
 
       // Bottom stuff
 
