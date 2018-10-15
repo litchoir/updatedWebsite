@@ -179,7 +179,7 @@ td {
 
 
 .bottom {
-  font-size: 15px;
+  font-size: 18px;
   margin-bottom: 0px;
   background-color: rgb(177, 141, 3);
 }
@@ -546,6 +546,11 @@ div#directorNote {
     display: none;
   }
 
+  div#directorNote {
+    line-height: 40px;
+    letter-spacing: 2.5px;
+    font-size: 30px;
+  }
 }
 
 .ReadMore {

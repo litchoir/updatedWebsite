@@ -17,7 +17,7 @@
 
 
   function ReadMore() {
-    //console.log("yo");
+
     var element_id = $(this).attr('id');
     if ($('#invisible' + element_id).css('display') == 'none') {
       $('#invisible' + element_id).css('display','inline-block');
@@ -26,6 +26,7 @@
     else {
       $('#invisible' + element_id).css('display','none');
       $('#'+ element_id).html('<i class="material-icons">keyboard_arrow_down</i> Read More');
+      $(location).attr('href','./home.html#whoWeAre')
     }
 
   }
