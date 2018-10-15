@@ -391,7 +391,6 @@ a#supportBtn {
   height: 369px !important;
   margin: 0px 25px 0px 25px;
   overflow: auto;
-  /* display: table-cell; */
   vertical-align: middle;
 }
 
@@ -526,4 +525,32 @@ div#directorNote {
   ul.pagination li a {
     font-size: 25px;
   }
+
+  #whoWeAre {
+    overflow: visible;
+    height: unset !important;
+  }
+
+  .card-title:not(.moreinfo) {
+    font-size: 22px !important;
+  }
+  #people .card-content p {
+    font-size: 22px !important;
+  }
+
+  #WhoReadMore {
+    font-size: 24px;
+  }
+
+  #invisibleWhoReadMore {
+    display: none;
+  }
+
+}
+
+.ReadMore {
+  font-weight: bolder;
+  cursor: pointer;
+  font-size: 25px
+  color: black;
 }

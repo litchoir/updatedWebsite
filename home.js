@@ -6,6 +6,7 @@
     slideshow();
     $('.parallax').parallax();
     $('.collapsible').collapsible();
+    $('.ReadMore').click(ReadMore);
     $('.slider').slider({
       height: 450,
       interval: 8000
@@ -13,6 +14,22 @@
     $(window).resize(slideshow);
     $(window).resize(navbar);
   }
+
+
+  function ReadMore() {
+    //console.log("yo");
+    var element_id = $(this).attr('id');
+    if ($('#invisible' + element_id).css('display') == 'none') {
+      $('#invisible' + element_id).css('display','block');
+      $('#'+ element_id).html('<i class="material-icons">keyboard_arrow_up</i> Read Less');
+    }
+    else {
+      $('#invisible' + element_id).css('display','none');
+      $('#'+ element_id).html('<i class="material-icons">keyboard_arrow_down</i> Read More');
+    }
+
+  }
+
 
   function navbar() {
 

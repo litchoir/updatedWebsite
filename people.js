@@ -10,8 +10,6 @@
   }
 
   function navbar() {
-
-      console.log("in navbar!")
       // Navbar and line stuff
 
       if ($(window).width() >= 884) {
