@@ -100,24 +100,23 @@
 
   function adjustPeople() {
     $('.card-content').css('height',$('.litcom').outerHeight(true));
-    if ($(window).width() >= 900) {
-      $('.peopleType').css('display','block');
-      $('#enlarge').css('display','none');
-    }
-    else {
-      if ($('.peopleType').css('display') != 'none') {
-        $('.peopleType').css('display','none');
-        $('#enlarge').css('display','block');
-        $(location).attr('href', './people.html#enlarge');
-        console.log("whaddup");
-      }
-      else {
-        $('.peopleType').css('display','none');
-        $('#enlarge').css('display','block');
-      }
-
-
-    }
+    // if ($(window).width() >= 900) {
+    //   $('.peopleType').css('display','block');
+    //   $('#enlarge').css('display','none');
+    // }
+    // else {
+    //   if ($('.peopleType').css('display') != 'none') {
+    //     $('.peopleType').css('display','none');
+    //     $('#enlarge').css('display','block');
+    //     $(location).attr('href', './people.html#enlarge');
+    //   }
+    //   else {
+    //     $('.peopleType').css('display','none');
+    //     $('#enlarge').css('display','block');
+    //   }
+    //
+    //
+    // }
 
   }
 

@@ -76,12 +76,12 @@
 
       // Column Squishing
 
-      if ($(window).width() < 800) {
-        $('#triple-threat').css('display','none');
-      }
-      else if ($(window).width() >= 800) {
-        $('#triple-threat').css('display','block');
-      }
+      // if ($(window).width() < 800) {
+      //   $('#triple-threat').css('display','none');
+      // }
+      // else if ($(window).width() >= 800) {
+      //   $('#triple-threat').css('display','block');
+      // }
 
       // Header stuff
 
