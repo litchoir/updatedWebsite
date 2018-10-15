@@ -459,7 +459,7 @@ span.songTitle {
 
 ul.pagination li a {
   color: white;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 
@@ -519,4 +519,11 @@ div#directorNote {
   line-height: 60px;
   letter-spacing: 3px;
   font-size: 28px;
+}
+
+
+@media screen and (max-width: 600px) {
+  ul.pagination li a {
+    font-size: 15px;
+  }
 }
