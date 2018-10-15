@@ -20,7 +20,7 @@
     //console.log("yo");
     var element_id = $(this).attr('id');
     if ($('#invisible' + element_id).css('display') == 'none') {
-      $('#invisible' + element_id).css('display','block');
+      $('#invisible' + element_id).css('display','inline-block');
       $('#'+ element_id).html('<i class="material-icons">keyboard_arrow_up</i> Read Less');
     }
     else {
