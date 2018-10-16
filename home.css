@@ -241,6 +241,7 @@ div.backgroundDiv {
   background: url("./stainedglass.png");
   background-size: 100px 500px;
   border: 1px inset black;
+  margin-bottom: 50px;
 }
 
 
@@ -534,12 +535,6 @@ div#directorNote {
     height: unset !important;
   }
 
-  .card-title:not(.moreinfo) {
-    font-size: 22px !important;
-  }
-  #people .card-content p {
-    font-size: 22px !important;
-  }
 
   #WhoReadMore {
     font-size: 24px;
@@ -593,6 +588,16 @@ div#directorNote {
   }
   .slider .newsContent {
     height: 400px;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+  .card-title:not(.moreinfo) {
+    font-size: 22px !important;
+  }
+  #people .card-content p {
+    font-size: 22px !important;
   }
 }
 
