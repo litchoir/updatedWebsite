@@ -43,7 +43,7 @@
         $('.navbar').css('padding','3px');
       }
       else if ($(window).width() < 464) {
-         $('.navbar').css('height','171px');
+         $('.navbar').css('height','121px');
          $('.navbar').css('padding','3px');
       }
 
