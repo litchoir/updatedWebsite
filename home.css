@@ -370,7 +370,6 @@ a#supportBtn {
 .slider .newsContent {
   margin-top: 10px !important;
   font-size: 22px;
-  margin-top: 10%;
   height: 225px;
   overflow: auto;
   display: flex;
@@ -526,6 +525,10 @@ div#directorNote {
     font-size: 25px;
   }
 
+  #newsHeader {
+    margin-top: 60px;
+  }
+
   #whoWeAre {
     overflow: visible;
     height: unset !important;
@@ -552,6 +555,7 @@ div#directorNote {
 
   .slider .newsContent {
     font-size: 28px;
+    margin-top: -20px !important;
   }
 
   div#directorNote {
@@ -570,8 +574,33 @@ div#directorNote {
   #invisibleDirectorReadMore {
     display: block !important;
   }
-
 }
+
+@media screen and (max-width: 850px) {
+  .slider .caption h3 {
+    display: none;
+  }
+  .slider .caption .newsAction {
+    display: none;
+  }
+  .slider .newsContent {
+    height: 400px;
+  }
+}
+
+/* function slideshow() {
+  if ($(window).width() < 850) {
+    $('.slider .caption h3').css('display','none');
+    $('.slider .caption .newsAction').css('display','none');
+    $('.slider .newsContent').css('height','400');
+  }
+  else if ($(window).width() >= 850) {
+    $('.slider .caption h3').css('display','block');
+    $('.slider .caption .newsAction').css('display','block');
+    $('.slider .newsContent').css('height','225');
+  }
+} */
+
 
 
 .ReadMore {
