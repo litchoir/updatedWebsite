@@ -546,11 +546,16 @@ div#directorNote {
     display: none;
   }
 
+  #invisibleDirectorReadMore {
+    display: none;
+  }
+
   div#directorNote {
-    line-height: 40px;
+    line-height: 50px;
     letter-spacing: 2.5px;
     font-size: 30px;
   }
+
 }
 
 .ReadMore {
