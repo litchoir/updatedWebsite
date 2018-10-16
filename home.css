@@ -553,9 +553,17 @@ div#directorNote {
     display: none;
   }
 
+  #invisibleAlumniReadMore {
+    display: none;
+  }
+
   .slider .newsContent {
     font-size: 28px;
     margin-top: -20px !important;
+  }
+
+  .pagination {
+    display: none !important;
   }
 
   div#directorNote {
@@ -588,18 +596,6 @@ div#directorNote {
   }
 }
 
-/* function slideshow() {
-  if ($(window).width() < 850) {
-    $('.slider .caption h3').css('display','none');
-    $('.slider .caption .newsAction').css('display','none');
-    $('.slider .newsContent').css('height','400');
-  }
-  else if ($(window).width() >= 850) {
-    $('.slider .caption h3').css('display','block');
-    $('.slider .caption .newsAction').css('display','block');
-    $('.slider .newsContent').css('height','225');
-  }
-} */
 
 
 
