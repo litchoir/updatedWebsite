@@ -35,18 +35,16 @@
 
   function navbar() {
 
-      //console.log("in navbar!")
-      // Navbar and line stuff
 
       if ($(window).width() >= 884) {
          $('.navbar').css('height','50px');
          $('.navbar').css('padding','0px');
       }
-      else if ($(window).width() >= 493 && $(window).width() < 884) {
+      else if ($(window).width() >= 464 && $(window).width() < 884) {
         $('.navbar').css('height','110px');
         $('.navbar').css('padding','3px');
       }
-      else if ($(window).width() < 493) {
+      else if ($(window).width() < 464) {
          $('.navbar').css('height','166px');
          $('.navbar').css('padding','3px');
       }
@@ -89,11 +87,8 @@
 
       // Who & news
 
-      // if ($(window).width() < 638) {
-      //   $('#who-News').css('display','none');
-      // }
-      // else if ($(window).width() >= 638) {
-      //   $('#who-News').css('display','block');
+      // if ($(window).width() >= 600) {
+      //   $('#invisibleWhoReadMore').css('display','block');
       // }
 
       // Bottom stuff

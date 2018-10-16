@@ -550,18 +550,34 @@ div#directorNote {
     display: none;
   }
 
+  .slider .newsContent {
+    font-size: 28px;
+  }
+
   div#directorNote {
     line-height: 50px;
     letter-spacing: 2.5px;
     font-size: 30px;
   }
+}
+
+@media screen and (min-width: 601px) {
+
+  #invisibleWhoReadMore {
+    display: block !important;
+  }
+
+  #invisibleDirectorReadMore {
+    display: block !important;
+  }
 
 }
 
+
 .ReadMore {
+  font-family: 'Forum', cursive;
   font-weight: bolder;
   cursor: pointer;
   font-size: 25px;
   color: black;
-  margin: 20px 0px 30px 0px;
 }
