@@ -26,8 +26,8 @@
     else {
       $('#invisible' + element_id).css('display','none');
       $('#'+ element_id).html('<i class="material-icons">keyboard_arrow_down</i> Read More');
-      if (element_id == 'WhoReadMore')
-        $(location).attr('href','./home.html#whoWeAre')
+      if (element_id == 'WhoReadMore') $(location).attr('href','./home.html#whoWeAreHeader')
+      else if (element_id == 'DirectorReadMore')  $(location).attr('href','./home.html#aWord')
     }
 
   }
