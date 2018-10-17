@@ -272,11 +272,11 @@ div.insideText p {
 
 .collection a {
   color: black !important;
-  font-size: 18px;
+  font-size: 23px;
 }
 
 .collection a:hover {
-  font-size: 25px;
+  font-size: 30px;
   color: white !important;
   background-color: #002b5c !important;
 }
@@ -566,6 +566,7 @@ div#directorNote {
     letter-spacing: 2.5px;
     font-size: 30px;
   }
+
 }
 
 @media screen and (min-width: 601px) {
@@ -577,6 +578,11 @@ div#directorNote {
   #invisibleDirectorReadMore {
     display: block !important;
   }
+
+  #invisibleAlumniReadMore {
+    display: block !important;
+  }
+
 }
 
 @media screen and (max-width: 850px) {
