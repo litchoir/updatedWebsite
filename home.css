@@ -22,7 +22,7 @@ body {
   background-color: rgb(177, 141, 3);
   height: 50px;
   margin-bottom: 0px;
-  background-image: url('https://www.nd.edu/assets/images/brandbar/dept-nd-blue@2x.png'), url('https://www.nd.edu/assets/images/brandbar/dept-staf-blue@2x.png');
+  background-image: url('./blueUND.png'), url('./blueDSA.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 5%, 95%;
@@ -33,7 +33,7 @@ body {
   height: 50px;
   margin-bottom: 0px;
   border-bottom: 1.5px solid #002b5c;
-  background-image: url('https://www.nd.edu/assets/images/brandbar/dept-nd-blue@2x.png');
+  background-image: url('./blueUND.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +43,7 @@ body {
   background-color: rgb(177, 141, 3);
   height: 50px;
   margin-bottom: 0px;
-  background-image: url('https://www.nd.edu/assets/images/brandbar/dept-staf-blue@2x.png');
+  background-image: url('blueDSA.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -71,6 +71,16 @@ body {
   margin-top: 40px;
   padding-right: 30px;
 }
+
+input[type=email]:not(.browser-default):focus:not([readonly])+label {
+  color: white;
+}
+
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+  border-bottom: 1px solid white;
+  box-shadow: 0 1px 0 0 white;
+}
+
 
 div.input-field.inline {
   width: 100%;
