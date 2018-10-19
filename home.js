@@ -34,39 +34,6 @@
 
   function navbar() {
 
-
-      if ($(window).width() >= 884) {
-         // $('.navbar').css('height','50px');
-         // $('.navbar').css('padding','0px');
-      }
-      else if ($(window).width() >= 464 && $(window).width() < 884) {
-        // $('.navbar').css('height','110px');
-        // $('.navbar').css('padding','3px');
-      }
-      else if ($(window).width() < 464) {
-         // $('.navbar').css('height','171px');
-         // $('.navbar').css('padding','3px');
-      }
-
-      if ($(window).width() >= 1055) {
-        // $('#searchBar').css('margin-top','37px');
-        // $('#brandRow').css('height','150px');
-        // $('#supportBtn').css('margin-top','57px');
-      }
-      else if ($(window).width() >= 568 && $(window).width() < 1055) {
-        // $('#brandRow').css('height','200px');
-        // $('#searchBar').css('margin-top','60px');
-        // $('#supportBtn').css('margin-top','80px');
-      }
-      else if ($(window).width() < 568 && $(window).width() >= 444) {
-        // $('#brandRow').css('height','270px');
-        // $('#searchBar').css('margin-top','97px');
-      }
-      else if ($(window).width() < 444) {
-        // $('#brandRow').css('height','330px');
-      }
-
-
       // Button renaming
 
       if ($(window).width() >= 1211) {
