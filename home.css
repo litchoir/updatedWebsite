@@ -567,9 +567,21 @@ div#directorNote {
     font-size: 30px;
   }
 
+  h1, h2 {
+    font-size: 48px;
+  }
+
 }
 
 @media screen and (min-width: 601px) {
+
+  #aWord {
+    margin-bottom: 55px !important;
+  }
+
+  #whoWeAreHeader {
+    margin-bottom: 62px !important;
+  }
 
   #invisibleWhoReadMore {
     display: block !important;
@@ -607,8 +619,130 @@ div#directorNote {
   }
 }
 
+@media screen and (max-width: 1000px) {
+  .smallBottom {
+    display: block;
+  }
+  .bigBottom {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1001px) {
+  .smallBottom {
+    display: none;
+  }
+  .bigBottom {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 717px) {
+  #supportBtn {
+    visibility: hidden;
+  }
+  #searchBar {
+    visibility: hidden;
+  }
+  #titleRowUND {
+    display: block;
+  }
+  #titleRowDSA {
+    display: block;
+  }
+  #titleRow {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 718px) {
+  #supportBtn {
+    visibility: visible;
+  }
+  #searchBar {
+    visibility: visible;
+  }
+  #titleRowUND {
+    display: none;
+  }
+  #titleRowDSA {
+    display: none;
+  }
+  #titleRow {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 466px) {
+  #brandRow {
+    height: 228.7px;
+  }
+}
+
+@media screen and (min-width: 467px) and (max-width: 600px) {
+  #brandRow {
+    height: 176.7px;
+  }
+}
+
+@media screen and (max-width: 1054px) and (min-width: 601px) {
+  #brandRow {
+    height: 200.7px;
+  }
+  #searchBar {
+    margin-top: 60px;
+  }
+  #supportBtn {
+    margin-top: 80px;
+  }
+}
+/*
+@media screen and (max-width: 599px) and (min-width: 568px) {
+  #brandRow {
+    height: 200px;
+  }
+  #searchBar {
+    margin-top: 60px;
+  }
+  #supportBtn {
+    margin-top: 80px;
+  }
+} */
+
+@media screen and (min-width: 1055px) {
+  #searchBar {
+    margin-top: 40px;
+  }
+  #brandRow {
+    height: 150px;
+  }
+  #supportBtn {
+    margin-top: 57px;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  .navbar {
+    height: 171px;
+    padding: 3px;
+  }
+}
 
 
+@media screen and (min-width: 464px) and (max-width: 883px) {
+  .navbar {
+    height: 110px;
+    padding: 3px;
+  }
+}
+
+
+@media screen and (min-width: 884px) {
+  .navbar {
+    height: 50px;
+    padding: 0px;
+  }
+}
 
 .ReadMore {
   font-family: 'Forum', cursive;
@@ -616,4 +750,8 @@ div#directorNote {
   cursor: pointer;
   font-size: 25px;
   color: black;
+}
+
+#NotreDame {
+  font-size: 37px;
 }
