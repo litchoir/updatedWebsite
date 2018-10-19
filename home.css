@@ -678,19 +678,13 @@ div#directorNote {
   }
 }
 
-@media screen and (max-width: 466px) {
+@media screen and (max-width: 600px) {
   #brandRow {
-    height: 228.7px;
+    height: 171.7px;
   }
 }
 
-@media screen and (min-width: 467px) and (max-width: 600px) {
-  #brandRow {
-    height: 176.7px;
-  }
-}
-
-@media screen and (max-width: 1054px) and (min-width: 601px) {
+@media screen and (max-width: 1070px) and (min-width: 601px) {
   #brandRow {
     height: 200.7px;
   }
@@ -701,20 +695,9 @@ div#directorNote {
     margin-top: 80px;
   }
 }
-/*
-@media screen and (max-width: 599px) and (min-width: 568px) {
-  #brandRow {
-    height: 200px;
-  }
-  #searchBar {
-    margin-top: 60px;
-  }
-  #supportBtn {
-    margin-top: 80px;
-  }
-} */
 
-@media screen and (min-width: 1055px) {
+
+@media screen and (min-width: 1071px) {
   #searchBar {
     margin-top: 40px;
   }
@@ -734,7 +717,7 @@ div#directorNote {
 }
 
 
-@media screen and (min-width: 464px) and (max-width: 883px) {
+@media screen and (min-width: 464px) and (max-width: 829px) {
   .navbar {
     height: 110px;
     padding: 3px;
@@ -742,7 +725,7 @@ div#directorNote {
 }
 
 
-@media screen and (min-width: 884px) {
+@media screen and (min-width: 830px) {
   .navbar {
     height: 50px;
     padding: 0px;
