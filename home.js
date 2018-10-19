@@ -34,41 +34,12 @@
 
   function navbar() {
 
-      // Button renaming
-
       if ($(window).width() >= 1211) {
         $('#supportBtn').html('SUPPORT THE CHOIR');
       }
       else if ($(window).width() < 1211 && $(window).width() > 717) {
         $('#supportBtn').html('SUPPORT');
       }
-
-      // Who & news
-
-      // Bottom stuff
-      //
-      // if ($(window).width() < 1000) {
-      //   $('.smallBottom').css('display','block');
-      //   $('.bigBottom').css('display','none');
-      // }
-      // else {
-      //   $('.smallBottom').css('display','none');
-      //   $('.bigBottom').css('display','block');
-      // }
-
-      // Header stuff
-
-      if ($(window).width() < 700) {
-        // $('#titleRowUND').css('display','block');
-        // $('#titleRowDSA').css('display','block');
-        // $('#titleRow').css('display','none')
-      }
-      else {
-        // $('#titleRowUND').css('display','none');
-        // $('#titleRowDSA').css('display','none');
-        // $('#titleRow').css('display','block');
-      }
-
   }
 
 
