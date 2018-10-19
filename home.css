@@ -53,6 +53,10 @@ body {
   color: white;
 }
 
+#titleRowLink1, #titleRowLink2 {
+  height: 50px;
+}
+
 #brandBar i {
   color: white !important;
 }
@@ -730,7 +734,14 @@ div#directorNote {
   }
 }
 
-@media screen and (max-width: 463px) {
+@media screen and (max-width: 370px) {
+  .navbar {
+    height: 210px;
+    padding: 3px;
+  }
+}
+
+@media screen and (max-width: 463px) and (min-width: 371px) {
   .navbar {
     height: 171px;
     padding: 3px;
