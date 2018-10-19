@@ -567,13 +567,8 @@ div#directorNote {
     font-size: 30px;
   }
 
-  h1:not(#NDLC), h2 {
+  h1, h2 {
     font-size: 48px;
-  }
-
-  #NDLC {
-    font-size: 45px;
-    width: 100%;
   }
 
 }
