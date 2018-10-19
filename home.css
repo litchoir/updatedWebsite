@@ -572,7 +572,8 @@ div#directorNote {
   }
 
   #NDLC {
-    font-size: 39px;
+    font-size: 45px;
+    width: 100%;
   }
 
 }
