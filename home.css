@@ -643,7 +643,7 @@ div#directorNote {
   }
 
   .element a:active {
-   transform: translateY(0.25px);
+   transform: translateY(0.2px);
    }
 
 
