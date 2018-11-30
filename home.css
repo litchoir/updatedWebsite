@@ -607,8 +607,12 @@ div#directorNote {
 
   .element a {
    transition: background-color: 0.0s ease;
-   translateY(3px);
   }
+  .element a:active {
+   transform: translateY(4px);
+    
+}
+
 }
 
 @media screen and (min-width: 601px) {
