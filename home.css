@@ -606,14 +606,14 @@ div#directorNote {
 
 
   .element a {
-   transition: background-color: 0.0s ease;
+   transition: unset;
   }
   .element a:active {
    transform: translateY(4px);
-    
+   }
 }
 
-}
+
 
 @media screen and (min-width: 601px) {
 
@@ -641,6 +641,11 @@ div#directorNote {
   .element a {
     transition: background-color 0.5s ease;
   }
+
+  .element a:active {
+   transform: translateY(0.35px);
+   }
+
 
 }
 
