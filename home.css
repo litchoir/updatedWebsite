@@ -642,8 +642,8 @@ div#directorNote {
     transition: background-color 0.5s ease;
   }
 
-  .element a:active {
-   transform: translateY(0.2px);
+  .element a.main:active {
+   transform: translateY(1px);
    }
 
 
