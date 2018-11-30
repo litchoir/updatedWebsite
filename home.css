@@ -119,6 +119,8 @@ div.input-field.inline {
   background-color: rgb(177, 141, 3);
 }
 
+
+
 .element {
   position: relative;
   display: inline-block;
@@ -605,6 +607,7 @@ div#directorNote {
 
   .element a {
    transition: background-color: 0.0s ease;
+   translateY(3px);
   }
 }
 
