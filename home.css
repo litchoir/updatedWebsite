@@ -602,6 +602,10 @@ div#directorNote {
     display: none;
   }
 
+
+  .element a {
+   transition: background-color: 0.0s ease;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -624,6 +628,11 @@ div#directorNote {
 
   #invisibleAlumniReadMore {
     display: block !important;
+  }
+
+
+  .element a {
+    transition: background-color 0.5s ease;
   }
 
 }
