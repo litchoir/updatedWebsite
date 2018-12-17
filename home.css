@@ -335,7 +335,7 @@ a#supportBtn {
   display: none;
 } */
 
-#requestBtn {
+#requestBtn, #reunionBtn {
   margin: auto;
   display: block;
   max-width: 190px;
