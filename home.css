@@ -239,6 +239,38 @@ iframe {
 
 .card {
   background-color: #002b5c;
+  position: relative;
+}
+
+.card-reveal {
+  position: relative;
+  padding-top: 0px !important;
+  border-bottom: 10px solid transparent;
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+}
+
+
+
+.closeIcon, .infoIcon {
+  position: absolute;
+  left: 5px;
+}
+
+.innerDiv {
+  position: absolute;
+  height: 50px;
+  background-color: white;
+  bottom: 0px;
+}
+
+.closeIcon {
+  top: 5px;
+}
+
+.infoIcon {
+  top: 5px;
+  cursor: pointer;
 }
 
 
