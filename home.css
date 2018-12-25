@@ -254,22 +254,16 @@ iframe {
 
 .closeIcon, .infoIcon {
   position: absolute;
-  left: 5px;
+  left: 1px;
 }
 
-.innerDiv {
-  position: absolute;
-  height: 50px;
-  background-color: white;
-  bottom: 0px;
-}
 
 .closeIcon {
-  top: 5px;
+  top: 1px;
 }
 
 .infoIcon {
-  top: 5px;
+  top: 1px;
   cursor: pointer;
 }
 
