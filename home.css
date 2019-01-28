@@ -2,6 +2,10 @@ body {
   font-family: 'Forum', cursive;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 @font-face {
   font-family: GalaxiePolaris;
   src: url('./GalaxiePolaris-Medium.otf');

@@ -39,14 +39,14 @@
     var element = jQuery(this).attr("id");
     if (element != 'lswitcher' && element != 'rswitcher') {
       $('ul.pagination li').removeClass('active');
-      $('ul.pagination li.' + year).addClass('active');
+      //$('ul.pagination li.' + year).addClass('active');
       if (year == '2014') {
-        $('ul.pagination li.Rli').addClass('disabled');
-        $('ul.pagination li.Lli').removeClass('disabled');
+        //$('ul.pagination li.Rli').addClass('disabled');
+        //$('ul.pagination li.Lli').removeClass('disabled');
       }
       else if (year == '2019') {
-        $('ul.pagination li.Lli').addClass('disabled');
-        $('ul.pagination li.Rli').removeClass('disabled');
+        //$('ul.pagination li.Lli').addClass('disabled');
+        //$('ul.pagination li.Rli').removeClass('disabled');
       }
       else $('ul.pagination li').removeClass('disabled');
       $(location).attr('href', './tours.html#a' + year);
@@ -56,9 +56,9 @@
       var activeYear = $('ul.pagination li.active a').html();
       $('ul.pagination li').removeClass('active');
       activeYear++;
-      $('ul.pagination li.'+ activeYear).addClass('active');
+      //$('ul.pagination li.'+ activeYear).addClass('active');
       if (activeYear == '2019') $('ul.pagination li.Lli').addClass('disabled');
-      console.log(activeYear);
+      //console.log(activeYear);
       $(location).attr('href', './tours.html#a' + activeYear);
     }
     else if (element == 'rswitcher' && ! $('ul.pagination li.Rli').hasClass('disabled')) {
@@ -73,7 +73,7 @@
         $('ul.pagination li.Rli').removeClass('active');
         $('ul.pagination li.Rli').addClass('disabled');
       }
-      $('ul.pagination li.'+ activeYear).addClass('active');
+      //$('ul.pagination li.'+ activeYear).addClass('active');
       $(location).attr('href', './tours.html#a' + activeYear);
     }
 
