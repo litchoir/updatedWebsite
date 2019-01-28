@@ -48,7 +48,7 @@
         //$('ul.pagination li.Lli').addClass('disabled');
         //$('ul.pagination li.Rli').removeClass('disabled');
       }
-      else $('ul.pagination li').removeClass('disabled');
+      //else $('ul.pagination li').removeClass('disabled');
       $(location).attr('href', './tours.html#a' + year);
     }
     else if (element == 'lswitcher' && ! $('ul.pagination li.Lli').hasClass('disabled')) {
@@ -66,10 +66,10 @@
       var activeYear = $('ul.pagination li.active a').html();
       $('ul.pagination li').removeClass('active');
       activeYear--;
-      console.log(activeYear);
+      //console.log(activeYear);
       if (activeYear == '2014') {
 
-        console.log("should be disabling");
+        //console.log("should be disabling");
         $('ul.pagination li.Rli').removeClass('active');
         $('ul.pagination li.Rli').addClass('disabled');
       }
