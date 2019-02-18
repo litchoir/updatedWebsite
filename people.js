@@ -6,6 +6,8 @@
     $('.parallax').parallax();
     $('.ReadMore').click(ReadMore);
     $('#directorBtn').click(buttonRun);
+     $('#expandMenu').click(expandMenu);
+
     $(window).resize(navbar);
     $(window).resize(adjustPeople);
   }
@@ -45,6 +47,13 @@
     $('#people .card-action').css('display','none');
   }
 }
+
+ function expandMenu() {
+    $('#expandMenu').css('display','none');
+    $('.menubtn').css('padding-bottom','0px');
+    $('.navbar').css('display','block');
+
+  }
 
   function adjustPeople() {
     $('.card-content').css('height',$('.litcom').outerHeight(true));

@@ -4,6 +4,7 @@
   function initialize() {
     navbar();
     $('.parallax').parallax();
+    $('#expandMenu').click(expandMenu);
     $(window).resize(navbar);
   }
 
@@ -15,6 +16,13 @@
       else if ($(window).width() < 1211 && $(window).width() > 717) {
         $('#supportBtn').html('SUPPORT');
       }
+  }
+
+  function expandMenu() {
+    $('#expandMenu').css('display','none');
+    $('.menubtn').css('padding-bottom','0px');
+    $('.navbar').css('display','block');
+
   }
 
 

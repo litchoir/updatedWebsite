@@ -6,6 +6,7 @@
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     $(window).resize(navbar);
+    $('#expandMenu').click(expandMenu);
     $('.collapsible-header').click(switchIcons);
   }
 
@@ -28,5 +29,12 @@
       $(this).children('i').html('add');
     }
   }
+
+ function expandMenu() {
+    $('#expandMenu').css('display','none');
+    $('.menubtn').css('padding-bottom','0px');
+    $('.navbar').css('display','block');
+
+  } 
 
 })();

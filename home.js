@@ -7,6 +7,7 @@
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     $('.ReadMore').click(ReadMore);
+    $('#expandMenu').click(expandMenu);
     $('.slider').slider({
       height: 450,
       interval: 8000
@@ -40,7 +41,14 @@
       else if ($(window).width() < 1211 && $(window).width() > 717) {
         $('#supportBtn').html('SUPPORT');
       }
-  }
+  } 
+
+  function expandMenu() {
+    $('#expandMenu').css('display','none');
+    $('.menubtn').css('padding-bottom','0px');
+    $('.navbar').css('display','block');
+
+  } 
 
 
 })();

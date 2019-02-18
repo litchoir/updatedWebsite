@@ -9,7 +9,7 @@
     $('ul.pagination li a').click(changeTour);
     $(window).scroll(hidePage);
     $(window).scroll(adjustYear);
-    
+    $('#expandMenu').click(expandMenu);
     setInterval(adjustYear,200);
   }
 
@@ -33,6 +33,12 @@
       else if ($(window).width() < 1211 && $(window).width() > 717) {
         $('#supportBtn').html('SUPPORT');
       }
+  }
+ function expandMenu() {
+    $('#expandMenu').css('display','none');
+    $('.menubtn').css('padding-bottom','0px');
+    $('.navbar').css('display','block');
+
   }
 
   function changeTour() {

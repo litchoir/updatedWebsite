@@ -71,6 +71,14 @@ html {
   margin-bottom: 0px;
 }
 
+.menubtn { 
+    padding-bottom: 20px;
+}
+
+#expandMenu {
+    background-color: rgb(177, 141, 3);  
+}
+
 #brandRow .col.s8 {
   padding-right: 0px;
 }
@@ -95,7 +103,7 @@ div.input-field.inline {
 
 }
 
-.navbar {
+.navbar, .menubtn {
   text-align: center;
   /* font-family: GalaxiePolarisCondensed !important; */
   background-color: #002b5c;
@@ -573,6 +581,14 @@ div#directorNote {
     font-size: 25px;
   }
 
+  .navbar {
+    display: none;
+  }
+
+  .menubtn {
+    display: block;
+  }
+
   #newsHeader {
     margin-top: 60px;
   }
@@ -646,6 +662,14 @@ div#directorNote {
 
 
 @media screen and (min-width: 601px) {
+
+  .navbar {
+    display: block;
+  }
+
+  .menubtn {
+    display: none;
+  }
 
   #aWord {
     margin-bottom: 55px !important;
@@ -757,7 +781,7 @@ div#directorNote {
 
 @media screen and (max-width: 600px) {
   #brandRow {
-    height: 171.7px;
+    height: 170px;
   }
 }
 
