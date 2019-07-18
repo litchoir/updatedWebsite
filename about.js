@@ -35,6 +35,7 @@
     $('.menubtn').css('padding-bottom','0px');
     $('.navbar').css('display','block');
 
-  } 
+  }
 
+    
 })();

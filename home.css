@@ -32,6 +32,21 @@ html {
   background-position: 5%, 95%;
 }
 
+.parallax-container {
+    position: relative;
+}
+
+
+.tooltipDiv {
+    top: -100px;
+    left: 100px;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+}
+
+
 #titleRowUND {
   background-color: rgb(177, 141, 3);
   height: 50px;
