@@ -51,7 +51,7 @@
         //$('ul.pagination li.Rli').addClass('disabled');
         //$('ul.pagination li.Lli').removeClass('disabled');
       }
-      else if (year == '2019') {
+      else if (year == '2020') {
         //$('ul.pagination li.Lli').addClass('disabled');
         //$('ul.pagination li.Rli').removeClass('disabled');
       }
@@ -64,7 +64,7 @@
       $('ul.pagination li').removeClass('active');
       activeYear++;
       //$('ul.pagination li.'+ activeYear).addClass('active');
-      if (activeYear == '2019') $('ul.pagination li.Lli').addClass('disabled');
+      if (activeYear == '2020') $('ul.pagination li.Lli').addClass('disabled');
       //console.log(activeYear);
       $(location).attr('href', './tours.html#a' + activeYear);
     }
@@ -97,22 +97,25 @@
   }
 
   function adjustYear() {
-
+    var y2019 = ($('#a2020').offset().top + $('#a2019').offset().top) / 2;
     var y1918 = ($('#a2019').offset().top + $('#a2018').offset().top) / 2;
     var y1817 = ($('#a2018').offset().top + $('#a2017').offset().top) / 2;
     var y1716 = ($('#a2017').offset().top + $('#a2016').offset().top) / 2;
     var y1615 = ($('#a2016').offset().top + $('#a2015').offset().top) / 2;
     var y1514 = ($('#a2015').offset().top + $('#a2014').offset().top) / 2;
     var y14e = ($('#a2014').offset().top + $('#aearlier').offset().top) / 2;
-    // var y1312 = ($('#a2013').offset().top + $('#a2012').offset().top) / 2;
-    // var y12e = ($('#a2012').offset().top + $('#aearlier').offset().top) / 2;
 
-    if ($(window).scrollTop() < y1918) {
+
+    if ($(window).scrollTop() < y2019) {
       $('ul.pagination li').removeClass('active');
-      $('ul.pagination li.2019').addClass('active');
+      $('ul.pagination li.2020').addClass('active');
       $('ul.pagination li.Lli').addClass("disabled");
     }
-
+    else if ($(window).scrollTop() < y1918 && $(window).scrollTop() > y2019) {
+        $('ul.pagination li').removeClass('active');
+        $('ul.pagination li.2019').addClass('active');
+        $('ul.pagination li.Lli').removeClass("disabled");
+    }
     else if ($(window).scrollTop() < y1817 && $(window).scrollTop() > y1918) {
         $('ul.pagination li').removeClass('active');
         $('ul.pagination li.2018').addClass('active');
@@ -142,18 +145,7 @@
         $('ul.pagination li.Lli').removeClass("disabled");
         $('ul.pagination li.Rli').addClass("disabled");
     }
-    // else if ($(window).scrollTop() < y1312 && $(window).scrollTop() > y14e) {
-    //     $('ul.pagination li').removeClass('active');
-    //     $('ul.pagination li.2013').addClass('active');
-    //     $('ul.pagination li.Lli').removeClass("disabled");
-    //     $('ul.pagination li.Rli').removeClass("disabled");
-    // }
-    // else if ($(window).scrollTop() < y12e && $(window).scrollTop() > y1312) {
-    //     $('ul.pagination li').removeClass('active');
-    //     $('ul.pagination li.2012').addClass('active');
-    //     $('ul.pagination li.Lli').removeClass("disabled");
-    //     $('ul.pagination li.Rli').addClass('disabled');
-    // }
+
     else if ($(window).scrollTop() < $('#aearlier').offset().top && $(window).scrollTop() > y14e) {
         $('ul.pagination li').removeClass('active');
          $('ul.pagination li.2014').addClass('active');
