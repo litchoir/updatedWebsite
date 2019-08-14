@@ -70,7 +70,7 @@
    <div class="col m2 hide-on-small-only valign-wrapper" id="searchBar">
      <a target="_blank" href="https://onmessage.nd.edu/search/?as_sitesearch=onmessage.nd.edu&entqr=3&q="><i class="material-icons prefix">search</i></a>
       <div class="input-field inline white-text">
-       <input id="email_inline" type="email" class="validate">
+       <input id="email_inline" type="email" class="validate" onfocus="this.style.color='#000000';">
        <label for="email_inline">Search</label>
            </div>
          </div>
@@ -134,14 +134,14 @@
 
   <div id="who-News" class="row">
     <div class="col s12 m6 center">
-      <h2 id="whoWeAreHeader">Who We Are</h2>
-      <div id="whoWeAre"><span id="whoSpan">
-<!--
-The Liturgical Choir is the primary Choir of the University of Notre Dame's Basilica of the Sacred Heart. <span id="invisibleWhoReadMore"> Its repertoire is drawn on the diverse traditions of a cappella and accompanied sacred music from the Renaissance through the twentieth century. The Choir, sponsored by Campus Ministry, provides musical leadership for the Basilica's 10 am Sunday Mass as well as a variety of other Basilica and University liturgies such as Sunday Vespers, weddings, building dedications, ordinations, Advent Lessons & Carols and special University liturgies such as Junior Parents' Weekend and the Baccalaureate Mass. Holy Week is especially important to the Choir, who sings for Palm Sunday, Tenebrae, the Good Friday Celebration of the Lord's Passion, the Easter Vigil, Easter Mass, and Easter Vespers. </span>
--->
-The University of Notre Dame Liturgical Choir, founded in 1973 as the Chapel Choir, is composed of approximately 70 singers drawn from all areas of the undergraduate and graduate student body. The Choir’s main purpose is to provide musical leadership at the 10 AM Solemn Mass at the Basilica of the Sacred Heart, a French Gothic structure built in 1871 by University founder Fr. Edward Sorin. The Sunday Mass at 10 AM (Eastern time) is televised weekly on CatholicTV. CatholicTV can be found on Comcast, Verizon, Full Channel and RCN cable providers in the New England area and is available nationally on Sky Angel IPTV and online at www.CatholicTV.com.<br><span id="invisibleWhoReadMore">The Liturgical Choir is also responsible for providing liturgical music for services such as Sunday Vespers, weddings in the Basilica, dedications, ordinations, Advent Lessons and Carols, and special university liturgies such as Junior Parents’ Weekend and the Baccalaureate Mass.<br>Holy Week is of special importance to the Choir, including Palm Sunday, Tenebrae, Good Friday, Easter Vigil, Easter Sunday, and Easter Vespers liturgies.<br> Membership in the Liturgical Choir is open to all undergraduate and graduate students of the University of Notre Dame. Membership is by audition only, and singers from all colleges and departments are welcome. General auditions for all University choral ensembles are held at the beginning of each academic year. Limited auditions are sometimes held at other times throughout the year as well. Led by director Dr. Andrew McShane, and assisted by Dr. Jonathan Hehn, the choir performs a repertoire drawn on the diverse traditions of a cappella and accompanied sacred music from the Renaissance through the twentieth century. In recognition of the Liturgical Choir’s special ministry to the Notre Dame community, Pope John Paul II extended his apostolic blessing upon the Choir in 1989.</span>
+        <h2 id="whoWeAreHeader">Who We Are</h2>
+        <div class="descriptionTextOuter">
+      <div class="descriptionTextOverflow" id="whoWeAreDiv" onscroll="adjustArrows(this.id)">
+          <i id="whoWeAreDivUp" class="material-icons scrollArrow scrollArrowUp hide-on-small-only">arrow_drop_up</i><i id="whoWeAreDivDown" class="material-icons scrollArrow scrollArrowDown hide-on-small-only">arrow_drop_down</i>
+          <span id="whoSpan">
+The University of Notre Dame Liturgical Choir, founded in 1973 as the Chapel Choir, is composed of approximately 70 singers drawn from all areas of the undergraduate and graduate student body.<span id="invisibleWhoReadMore"><br><br>The Choir’s main purpose is to provide musical leadership at the 10 AM Solemn Mass at the Basilica of the Sacred Heart, a French Gothic structure built in 1871 by University founder Fr. Edward Sorin. The Sunday Mass at 10 AM (Eastern time) is televised weekly on CatholicTV. CatholicTV can be found on Comcast, Verizon, Full Channel and RCN cable providers in the New England area and is available nationally on Sky Angel IPTV and online at www.CatholicTV.com.<br><br>The Liturgical Choir is also responsible for providing liturgical music for services such as Sunday Vespers, weddings in the Basilica, dedications, ordinations, Advent Lessons and Carols, and special university liturgies such as Junior Parents’ Weekend and the Baccalaureate Mass.<br><br>Holy Week is of special importance to the Choir, including Palm Sunday, Tenebrae, Good Friday, Easter Vigil, Easter Sunday, and Easter Vespers liturgies.<br><br>Membership in the Liturgical Choir is open to all undergraduate and graduate students of the University of Notre Dame. Membership is by audition only, and singers from all colleges and departments are welcome. General auditions for all University choral ensembles are held at the beginning of each academic year. Limited auditions are sometimes held at other times throughout the year as well. Led by director Dr. Andrew McShane, and assisted by Dr. Jonathan Hehn, the choir performs a repertoire drawn on the diverse traditions of a cappella and accompanied sacred music from the Renaissance through the twentieth century. In recognition of the Liturgical Choir’s special ministry to the Notre Dame community, Pope John Paul II extended his apostolic blessing upon the Choir in 1989.</span>
 </span>
-      </div>
+      </div></div>
       <div class="ReadMore hide-on-med-and-up" style="margin-top:25px;" id="WhoReadMore"><i class="material-icons">keyboard_arrow_down</i> Read More</div>
     </div>
       <div class="col s12 m6">
@@ -162,7 +162,7 @@ The University of Notre Dame Liturgical Choir, founded in 1973 as the Chapel Cho
               <div class="caption center-align">
                 <h3>Thank you for your continued support!</h3>
                 <!-- <i class="material-icons upArrow">arrow_upward</i> -->
-                <div class="newsContent" class="light grey-text text-lighten-3"><div class="innerNewsContent">This past ND Day, we were blessed to receive an abundance of donations from alumni, students, family, and other friends of the choir. <a href="https://www.facebook.com/ndlitchoir/videos/1792395747530706/?epa=SEARCH_BOX" target="_blank">Here's our way of saying thanks!</a></div></div>
+                <div class="newsContent" class="light grey-text text-lighten-3"><div class="innerNewsContent">This past ND Day, we were blessed to receive an abundance of donations from supporters of our choir. <a href="https://www.facebook.com/ndlitchoir/videos/1792395747530706/?epa=SEARCH_BOX" target="_blank">Here's our way of saying thanks!</a></div></div>
                 <div class="center-align newsAction">May 1, 2019 &#9679; Laurence, Maggie</div>
               </div>
             </li>
@@ -181,7 +181,7 @@ The University of Notre Dame Liturgical Choir, founded in 1973 as the Chapel Cho
                 <h3>Fr. Peter Rocca Announces Retirement</h3>
 
                 <div class="newsContent" class="light grey-text text-lighten-3">Rector of the Basilica, Fr. Rocca, who also serves as our chaplain, will be retiring July 1, 2019. We are so grateful for his service and dedication! <a href="https://www.nd.edu/stories/keeper-of-the-flame/" target="_blank">Read more here.</a></div>
-                <div class="center-align newsAction">February 25, 2019 &#9679; Kelly, Tara</div>
+              </div>:
               </div>
             </li>-->
             <li>
@@ -194,29 +194,27 @@ The University of Notre Dame Liturgical Choir, founded in 1973 as the Chapel Cho
               </div>
             </li>
           </ul>
-          <i class="material-icons" id="upArrow">arrow_upward</i>
-          <i class="material-icons" id="downArrow">arrow_downward</i>
         </div>
       </div>
     </div>
 
 <div class="row">
-  <div class="col s10 offset-s1 m8 offset-m2 center">
-    <h2 id="aWord">A Word From the Director</h2>
-    <div id="directorNote"><span id="directorText"> "It's hard to believe that I am entering my eighth year as director of the incredible Notre Dame Liturgical Choir. <span id="invisibleDirectorReadMore">I strive to continue to build upon the foundations of my teacher and friend Dr. Gail Walton and pray often that she is pleased with my efforts. The Liturgical Choir just keeps getting better and better, not because of anything I am doing but because the Choir is gifted with incredible young Notre Dame women and men. The current student leadership is responsible for this fantastic new website and for that I am so grateful." </span></span>
+  <div class="col s12 m6 center">
+    <h2 id="aWord">From the Director</h2>
+    <div id="directorNote">
+        <div class="descriptionTextOuter">
+        <div class="descriptionTextOverflow" id="directorNoteDiv" onscroll="adjustArrows(this.id)">
+            <i id="directorNoteDivUp" class="material-icons scrollArrow scrollArrowUp hide-on-small-only">arrow_drop_up</i><i id="directorNoteDivDown" class="material-icons scrollArrow hide-on-small-only" style="bottom: 55px;">arrow_drop_down</i>
+            <span id="directorText"> "It's hard to believe that I am entering my ninth year as director of the incredible Notre Dame Liturgical Choir. <span id="invisibleDirectorReadMore"><br><br>I strive to continue to build upon the foundations of my teacher and friend Dr. Gail Walton and pray often that she is pleased with my efforts. The Liturgical Choir just keeps getting better and better, not because of anything I am doing but because the Choir is gifted with incredible young Notre Dame women and men. The current student leadership is responsible for this fantastic new website and for that I am so grateful." </span></span></div>
       <div style="margin-top:30px;" class="ReadMore hide-on-med-and-up" id="DirectorReadMore"><i class="material-icons">keyboard_arrow_down</i> Read More</div>
-      <div style="margin:65px 0px 40px 0px;font-size:40px;">- Dr. Andrew McShane</div>
+      <div style="margin:50px 0px 40px 0px;font-size:30px;">- Dr. Andrew McShane</div>
     </div>
-    <br><br><br>
+    </div>
   </div>
-</div>
-
-<div class="row">
-  <div class="col s12 m8 offset-m2">
+  <div class="col s12 m6">
+<h2>Featured Video</h2>
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/1MZnc0gyU8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  </div>
 </div>
-
-<br><br><br><br>
 
 <div class="icons-container">
   <a href="https://www.facebook.com/ndlitchoir/" target="_blank"><img src="./home_jpg/facebook.jpg"></a>
@@ -247,6 +245,25 @@ The University of Notre Dame Liturgical Choir, founded in 1973 as the Chapel Cho
 
 
 </div>
+
+<script>
+    function adjustArrows(id) {
+       var element = document.getElementById(id);
+       var upArrowElement = document.getElementById(id + "Up");
+       var downArrowElement = document.getElementById(id + "Down");
+       if (element.scrollTop + element.clientHeight >= element.scrollHeight) {
+           downArrowElement.style.opacity = "0";
+       } else if (element.scrollTop == 0) {
+           upArrowElement.style.opacity = "0"; 
+       } else {
+           upArrowElement.style.opacity = "1";
+           downArrowElement.style.opacity = "1"; 
+       }
+    }
+    adjustArrows("whoWeAreDiv");
+    adjustArrows("directorNoteDiv");
+</script>
+
 
 </body>
 

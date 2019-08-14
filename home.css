@@ -103,6 +103,8 @@ html {
   padding-right: 30px;
 }
 
+
+
 input[type=email]:not(.browser-default):focus:not([readonly])+label {
   color: white;
 }
@@ -456,14 +458,32 @@ a#supportBtn {
   margin-top: 8%;
 }
 
-#whoWeAre {
+.descriptionTextOuter {
+    position: relative;
+}
+
+.descriptionTextOverflow {
   font-size: 24px;
-  height: 369px !important;
-  margin: 0px 25px 0px 25px;
+  margin: 0px 40px 0px 40px;
   overflow: auto;
   vertical-align: middle;
 }
 
+.scrollArrow {
+  position: absolute; 
+  left: 48%;
+  font-size: 35px;
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.scrollArrowUp {
+  top: -50px;
+}
+
+.scrollArrowDown {
+  bottom: -50px; 
+}
 
 .recordings col {
   text-align: center;
@@ -515,6 +535,10 @@ span.songTitle {
   position: sticky;
   top: 10px;
   left: 0px;
+}
+
+#aWord {
+    margin-bottom: 62px !important;
 }
 
 .pagination {
@@ -584,10 +608,7 @@ h3 i.material-icons {
 
 
 div#directorNote {
-  font-family: 'Bellefair', serif;
-  line-height: 60px;
-  letter-spacing: 3px;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 
@@ -613,9 +634,16 @@ div#directorNote {
     height: unset !important;
   }
 
-
   #WhoReadMore {
     font-size: 24px;
+  }
+
+  #whoWeAreDiv {
+    height: unset !important;
+  }
+
+  #directorNoteDiv {
+    height: unset !important;
   }
 
   #invisibleWhoReadMore {
@@ -640,9 +668,7 @@ div#directorNote {
   }
 
   div#directorNote {
-    line-height: 50px;
-    letter-spacing: 2.5px;
-    font-size: 30px;
+    font-size: 25px;
   }
 
   h1:not(#NDLC) {
@@ -686,26 +712,29 @@ div#directorNote {
     display: none;
   }
 
-  #aWord {
-    margin-bottom: 55px !important;
-  }
-
   #whoWeAreHeader {
     margin-bottom: 62px !important;
   }
 
   #invisibleWhoReadMore {
-    display: block !important;
+    display: inline !important;
   }
 
   #invisibleDirectorReadMore {
-    display: block !important;
+    display: inline !important;
   }
 
   #invisibleAlumniReadMore {
-    display: block !important;
+    display: inline !important;
   }
 
+  #whoWeAreDiv {
+    height: 369px;
+  }
+
+  #directorNoteDiv {
+    height: 250px;
+  }
 
   .element a {
     transition: background-color 0.5s ease;

@@ -1,8 +1,10 @@
 (function() {
 
+  var htmlArray = [];
+
+
   $(document).ready(initialize);
   function initialize() {
-
     navbar();
     $('.parallax').parallax();
     $('.collapsible').collapsible();
@@ -15,13 +17,16 @@
     $(window).resize(navbar);
   }
 
+  
+
 
   function ReadMore() {
-
     var element_id = $(this).attr('id');
     if ($('#invisible' + element_id).css('display') == 'none') {
-      $('#invisible' + element_id).css('display','inline-block');
+      $('#invisible' + element_id).css('display','inline');
       $('#'+ element_id).html('<i class="material-icons">keyboard_arrow_up</i> Read Less');
+      if (element_id == "WhoReadMore") $(location).attr('href','./home.html#invisibleWhoReadMore');
+      else $(location).attr('href','./home.html#invisibleDirectorReadMore');
     }
     else {
       $('#invisible' + element_id).css('display','none');
@@ -41,6 +46,9 @@
       else if ($(window).width() < 1211 && $(window).width() > 717) {
         $('#supportBtn').html('SUPPORT');
       }
+
+      
+
   } 
 
   function expandMenu() {
