@@ -475,6 +475,7 @@ a#supportBtn {
   font-size: 50px;
   transition-property: opacity;
   transition-duration: 0.5s;
+  opacity: 0;
 }
 
 .scrollArrowUp {

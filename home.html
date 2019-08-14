@@ -27,7 +27,7 @@
       <script src="./home.js"></script>
   </head>
 
-<body>
+<body onload="manageArrows()" onresize="manageArrows()">
 
 
     <div class="row center" id="titleRow">
@@ -260,8 +260,11 @@ The University of Notre Dame Liturgical Choir, founded in 1973 as the Chapel Cho
            downArrowElement.style.opacity = "1"; 
        }
     }
-    adjustArrows("whoWeAreDiv");
-    adjustArrows("directorNoteDiv");
+
+    function manageArrows() {
+        adjustArrows("whoWeAreDiv");
+        adjustArrows("directorNoteDiv");
+    }
 </script>
 
 
