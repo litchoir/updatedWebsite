@@ -1,5 +1,5 @@
 (function() {
-
+  var tour_offsets = {}
   $(document).ready(initialize);
   function initialize() {
     navbar();
@@ -10,6 +10,7 @@
     $(window).scroll(hidePage);
     $(window).scroll(adjustYear);
     $('#expandMenu').click(expandMenu);
+    initializeYearRanges();
     setInterval(adjustYear,200);
   }
 
@@ -46,16 +47,10 @@
     var element = jQuery(this).attr("id");
     if (element != 'lswitcher' && element != 'rswitcher') {
       $('ul.pagination li').removeClass('active');
-      //$('ul.pagination li.' + year).addClass('active');
       if (year == '2014') {
-        //$('ul.pagination li.Rli').addClass('disabled');
-        //$('ul.pagination li.Lli').removeClass('disabled');
       }
       else if (year == '2020') {
-        //$('ul.pagination li.Lli').addClass('disabled');
-        //$('ul.pagination li.Rli').removeClass('disabled');
       }
-      //else $('ul.pagination li').removeClass('disabled');
       $(location).attr('href', './tours.html#a' + year);
     }
     else if (element == 'lswitcher' && ! $('ul.pagination li.Lli').hasClass('disabled')) {
@@ -63,9 +58,8 @@
       var activeYear = $('ul.pagination li.active a').html();
       $('ul.pagination li').removeClass('active');
       activeYear++;
-      //$('ul.pagination li.'+ activeYear).addClass('active');
       if (activeYear == '2020') $('ul.pagination li.Lli').addClass('disabled');
-      //console.log(activeYear);
+
       $(location).attr('href', './tours.html#a' + activeYear);
     }
     else if (element == 'rswitcher' && ! $('ul.pagination li.Rli').hasClass('disabled')) {
@@ -73,17 +67,23 @@
       var activeYear = $('ul.pagination li.active a').html();
       $('ul.pagination li').removeClass('active');
       activeYear--;
-      //console.log(activeYear);
       if (activeYear == '2014') {
-
-        //console.log("should be disabling");
         $('ul.pagination li.Rli').removeClass('active');
         $('ul.pagination li.Rli').addClass('disabled');
       }
-      //$('ul.pagination li.'+ activeYear).addClass('active');
       $(location).attr('href', './tours.html#a' + activeYear);
     }
 
+  }
+
+  function initializeYearRanges() {
+    var current_year = new Date().getFullYear() - 1;
+    var minimum_year = 2013;
+    for (var i = current_year; i >= minimum_year; i--) {
+        tour_offsets [i] = {
+            "offset": (i >= 2014) ? (($('#a' + (i+1)).offset().top + $('#a' + i).offset().top) / 2) : (($('#a2014').offset().top + $('#aearlier').offset().top) / 2)
+        };
+    }
   }
 
   function hidePage() {
@@ -96,60 +96,32 @@
     }
   }
 
-  function adjustYear() {
-    var y2019 = ($('#a2020').offset().top + $('#a2019').offset().top) / 2;
-    var y1918 = ($('#a2019').offset().top + $('#a2018').offset().top) / 2;
-    var y1817 = ($('#a2018').offset().top + $('#a2017').offset().top) / 2;
-    var y1716 = ($('#a2017').offset().top + $('#a2016').offset().top) / 2;
-    var y1615 = ($('#a2016').offset().top + $('#a2015').offset().top) / 2;
-    var y1514 = ($('#a2015').offset().top + $('#a2014').offset().top) / 2;
-    var y14e = ($('#a2014').offset().top + $('#aearlier').offset().top) / 2;
 
-
-    if ($(window).scrollTop() < y2019) {
-      $('ul.pagination li').removeClass('active');
-      $('ul.pagination li.2020').addClass('active');
-      $('ul.pagination li.Lli').addClass("disabled");
-    }
-    else if ($(window).scrollTop() < y1918 && $(window).scrollTop() > y2019) {
-        $('ul.pagination li').removeClass('active');
-        $('ul.pagination li.2019').addClass('active');
-        $('ul.pagination li.Lli').removeClass("disabled");
-    }
-    else if ($(window).scrollTop() < y1817 && $(window).scrollTop() > y1918) {
-        $('ul.pagination li').removeClass('active');
-        $('ul.pagination li.2018').addClass('active');
-        $('ul.pagination li.Lli').removeClass("disabled");
-    }
-    else if ($(window).scrollTop() < y1716 && $(window).scrollTop() > y1817) {
-        $('ul.pagination li').removeClass('active');
-        $('ul.pagination li.2017').addClass('active');
-        $('ul.pagination li.Lli').removeClass("disabled");
+  function changePagination(y) { 
+    $('ul.pagination li').removeClass('active');
+    if (y == new Date().getFullYear()) {
+        $('ul.pagination li.Lli').addClass("disabled");
         $('ul.pagination li.Rli').removeClass("disabled");
-    }
-    else if ($(window).scrollTop() < y1615 && $(window).scrollTop() > y1716) {
-        $('ul.pagination li').removeClass('active');
-        $('ul.pagination li.2016').addClass('active');
-        $('ul.pagination li.Lli').removeClass("disabled");
-        $('ul.pagination li.Rli').removeClass("disabled");
-    }
-    else if ($(window).scrollTop() < y1514 && $(window).scrollTop() > y1615) {
-        $('ul.pagination li').removeClass('active');
-        $('ul.pagination li.2015').addClass('active');
-        $('ul.pagination li.Lli').removeClass("disabled");
-        $('ul.pagination li.Rli').removeClass("disabled");
-    }
-    else if ($(window).scrollTop() < y14e && $(window).scrollTop() > y1514) {
-        $('ul.pagination li').removeClass('active');
-        $('ul.pagination li.2014').addClass('active');
-        $('ul.pagination li.Lli').removeClass("disabled");
+    } else if (y == 2014) { 
         $('ul.pagination li.Rli').addClass("disabled");
+        $('ul.pagination li.Lli').removeClass("disabled");
+    } else { 
+        $('ul.pagination li.Rli').removeClass("disabled");
+        $('ul.pagination li.Lli').removeClass("disabled");
+    }
+    $('ul.pagination li.' + y).addClass('active');
+  }
+
+function adjustYear() {
+    var page_scroll = $(window).scrollTop();
+
+    for (var j = new Date().getFullYear() - 1; j >= 2014; j--) {
+        if (page_scroll < tour_offsets[j]["offset"]) {
+            changePagination(j+1);
+            return;
+        }
     }
 
-    else if ($(window).scrollTop() < $('#aearlier').offset().top && $(window).scrollTop() > y14e) {
-        $('ul.pagination li').removeClass('active');
-         $('ul.pagination li.2014').addClass('active');
-    }
-  }
+    changePagination(2014);
 
 })();
