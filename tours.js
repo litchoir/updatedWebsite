@@ -1,8 +1,12 @@
 (function() {
-  var tour_offsets = {}
+  var tour_offsets = {};
+  var minimum_year = 2014;
+  var maximum_year = 2020;
   $(document).ready(initialize);
   function initialize() {
     navbar();
+    initializePagination();
+    initializeYearRanges();
     $('.parallax').parallax();
     $('#directorBtn').click(buttonRun);
     $(window).resize(navbar);
@@ -10,8 +14,6 @@
     $(window).scroll(hidePage);
     $(window).scroll(adjustYear);
     $('#expandMenu').click(expandMenu);
-    initializeYearRanges();
-    setInterval(adjustYear,200);
   }
 
   function buttonRun() {
@@ -26,8 +28,15 @@
     }
   }
 
-  function navbar() {
 
+  function initializePagination() { 
+    for (var i = minimum_year; i <= maximum_year; i++) { 
+        $('.Lli').after('<li class="' + i + ' waves-effect"><a href="#!">' + i + '</a></li>');
+        if (i == maximum_year) $("." + i).addClass("active");
+    }
+  }
+
+  function navbar() {
       if ($(window).width() >= 1211) {
         $('#supportBtn').html('SUPPORT THE CHOIR');
       }
@@ -47,9 +56,9 @@
     var element = jQuery(this).attr("id");
     if (element != 'lswitcher' && element != 'rswitcher') {
       $('ul.pagination li').removeClass('active');
-      if (year == '2014') {
+      if (year == minimum_year) {
       }
-      else if (year == '2020') {
+      else if (year == maximum_year) {
       }
       $(location).attr('href', './tours.html#a' + year);
     }
@@ -58,7 +67,7 @@
       var activeYear = $('ul.pagination li.active a').html();
       $('ul.pagination li').removeClass('active');
       activeYear++;
-      if (activeYear == '2020') $('ul.pagination li.Lli').addClass('disabled');
+      if (activeYear == maximum_year) $('ul.pagination li.Lli').addClass('disabled');
 
       $(location).attr('href', './tours.html#a' + activeYear);
     }
@@ -67,7 +76,7 @@
       var activeYear = $('ul.pagination li.active a').html();
       $('ul.pagination li').removeClass('active');
       activeYear--;
-      if (activeYear == '2014') {
+      if (activeYear == minimum_year) {
         $('ul.pagination li.Rli').removeClass('active');
         $('ul.pagination li.Rli').addClass('disabled');
       }
@@ -76,19 +85,17 @@
 
   }
 
-  function initializeYearRanges() {
-    var current_year = new Date().getFullYear() - 1;
-    var minimum_year = 2013;
-    for (var i = current_year; i >= minimum_year; i--) {
+  function initializeYearRanges() { 
+    for (var i = maximum_year; i >= minimum_year; i--) {
         tour_offsets [i] = {
-            "offset": (i >= 2014) ? (($('#a' + (i+1)).offset().top + $('#a' + i).offset().top) / 2) : (($('#a2014').offset().top + $('#aearlier').offset().top) / 2)
+            "offset": (i > minimum_year) ? (($('#a' + i).offset().top + $('#a' + (i-1)).offset().top) / 2) : (($('#a' + minimum_year).offset().top + $('#aearlier').offset().top) / 2)
         };
     }
   }
 
   function hidePage() {
-    var y14e = ($('#a2014').offset().top + $('#aearlier').offset().top) / 2;
-    if ($(window).scrollTop() >= y14e) {
+    var earliest_offset = ($('#a' + minimum_year).offset().top + $('#aearlier').offset().top) / 2;
+    if ($(window).scrollTop() >= earliest_offset) {
         $('.pagination').css('display','none');
     }
     else {
@@ -97,9 +104,9 @@
   }
 
 
-  function changePagination(y) { 
+  function changePagination(y) {
     $('ul.pagination li').removeClass('active');
-    if (y == new Date().getFullYear()) {
+    if (y == maximum_year) {
         $('ul.pagination li.Lli').addClass("disabled");
         $('ul.pagination li.Rli').removeClass("disabled");
     } else if (y == 2014) { 
@@ -113,15 +120,14 @@
   }
 
 function adjustYear() {
-    var page_scroll = $(window).scrollTop();
-
-    for (var j = new Date().getFullYear() - 1; j >= 2014; j--) {
+    var page_scroll = $(window).scrollTop(); 
+    for (var j = maximum_year; j >= minimum_year; j--) {
         if (page_scroll < tour_offsets[j]["offset"]) {
-            changePagination(j+1);
+            changePagination(j);
             return;
         }
     }
-
     changePagination(2014);
+}
 
 })();
