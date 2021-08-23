@@ -26,7 +26,7 @@ html {
   background-color: rgb(177, 141, 3);
   height: 50px;
   margin-bottom: 0px;
-  background-image: url('./blueUND.png'), url('./blueDSA.png');
+  background-image: url('./img/branding/blueUND.png'), url('./img/branding/blueDSA.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 5%, 95%;
@@ -52,7 +52,7 @@ html {
   height: 50px;
   margin-bottom: 0px;
   border-bottom: 1.5px solid #002b5c;
-  background-image: url('./blueUND.png');
+  background-image: url('./img/branding/blueUND.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -62,7 +62,7 @@ html {
   background-color: rgb(177, 141, 3);
   height: 50px;
   margin-bottom: 0px;
-  background-image: url('blueDSA.png');
+  background-image: url('img/branding/blueDSA.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
