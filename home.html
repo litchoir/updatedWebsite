@@ -27,9 +27,7 @@
       <script src="./home.js"></script>
   </head>
 
-<body onload="manageArrows()" onresize="manageArrows()">
-
-
+<body>
     <div class="row center" id="titleRow">
       <div class="col s6">
         <a target="_blank" href="https://www.nd.edu">
@@ -76,17 +74,6 @@
          </div>
        </div>
       </div>
-    <!-- </div>
-  </div> -->
-
-  <!-- <div class="parallax-container">
-    <div class="parallax"><img src="https://litchoir.nd.edu/assets/278966/ndlc_1.jpg"></div>
-  </div> -->
-
-  <!-- <div class="parallax-container">
-    <div class="parallax"><img src="./vesperz.png"></div>
-  </div> -->
-
   <div class="navbar">
     <div class="element"><a class="main" href="./home.html">Home</a></div>
     <div class="element"><a class="main" href="./about.html">About</a></div>
@@ -107,8 +94,6 @@
         <a  href="./tours.html#a2016">2016</a>
         <a  href="./tours.html#a2015">2015</a>
         <a  href="./tours.html#a2014">2014</a>
-        <!-- <a href="./tours.html#a2013">2013</a>
-        <a href="./tours.html#a2012">2012</a> -->
         <a  href="./tours.html#aearlier">Earlier</a>
       </div>
     </div>
@@ -137,8 +122,7 @@
     <div class="col s12 m6 center">
         <h2 id="whoWeAreHeader">Who We Are</h2>
         <div class="descriptionTextOuter">
-      <div class="descriptionTextOverflow" id="whoWeAreDiv" onscroll="adjustArrows(this.id)">
-          <i id="whoWeAreDivUp" class="material-icons scrollArrow scrollArrowUp hide-on-small-only">arrow_drop_up</i><i id="whoWeAreDivDown" class="material-icons scrollArrow scrollArrowDown hide-on-small-only">arrow_drop_down</i>
+      <div class="descriptionTextOverflow" id="whoWeAreDiv">
           <span id="whoSpan">
 The Notre Dame Liturgical Choir is a continuation of the Chapel Choir, which originated in 1969 and was officially founded in 1973. It is composed of approximately 70 singers drawn from all areas of the undergraduate and graduate student body.<span id="invisibleWhoReadMore"><br><br>The Choir’s main purpose is to provide musical leadership at the 10 AM Solemn Mass at the Basilica of the Sacred Heart, a French Gothic structure built in 1871 by University founder Fr. Edward Sorin. The Sunday Mass at 10 AM (Eastern time) is televised weekly on CatholicTV. CatholicTV can be found on Comcast, Verizon, Full Channel and RCN cable providers in the New England area and is available nationally on Sky Angel IPTV and online at www.CatholicTV.com.<br><br>The Liturgical Choir is also responsible for providing liturgical music for services such as Sunday Vespers, weddings in the Basilica, dedications, ordinations, Advent Lessons and Carols, and special university liturgies such as Junior Parents’ Weekend and the Baccalaureate Mass.<br><br>Holy Week is of special importance to the Choir, including Palm Sunday, Tenebrae, Good Friday, Easter Vigil, Easter Sunday, and Easter Vespers liturgies.<br><br>Membership in the Liturgical Choir is open to all undergraduate and graduate students of the University of Notre Dame. Membership is by audition only, and singers from all colleges and departments are welcome. General auditions for all University choral ensembles are held at the beginning of each academic year. Limited auditions are sometimes held at other times throughout the year as well. Led by director Dr. Andrew McShane, and assisted by Dr. Jonathan Hehn, the choir performs a repertoire drawn on the diverse traditions of a cappella and accompanied sacred music from the Renaissance through the twentieth century. In recognition of the Liturgical Choir’s special ministry to the Notre Dame community, Pope John Paul II extended his apostolic blessing upon the Choir in 1989.</span>
 </span>
@@ -153,7 +137,6 @@ The Notre Dame Liturgical Choir is a continuation of the Chapel Choir, which ori
               <img src="./home_jpg/litchoirpromo.jpeg" style="opacity:0.50">
               <div class="caption center-align">
                 <h3>Attention Singers!</h3>
-                <!-- <i class="material-icons upArrow">arrow_upward</i> -->
                 <div class="newsContent" class="light grey-text text-lighten-3"><div class="innerNewsContent"> If you are a student at ND, Holy Cross, or St. Mary's, and are interested in auditioning for the Liturgical Choir, please e-mail Andrew McShane at amcshane@nd.edu </div></div>
                 <div class="center-align newsAction">August 19, 2021 &#9679; Rymsza, Lauren</div>
               </div>
@@ -162,22 +145,10 @@ The Notre Dame Liturgical Choir is a continuation of the Chapel Choir, which ori
               <img src="./home_jpg/streaming.jpg" style="opacity:0.14">
               <div class="caption center-align">
                 <h3>Liturgical Choir on Apple Music and Spotify!</h3>
-                <!-- <i class="material-icons upArrow">arrow_upward</i> -->
                 <div class="newsContent" class="light grey-text text-lighten-3"><div class="innerNewsContent">The Notre Dame Liturgical Choir's recordings are now digital! For links to the choir's albums on Apple Music, Spotify, Amazon Music, Pandora, YouTube Music, and more, <a href="./recordings.html">see the Recordings page.</a></div></div>
                 <div class="center-align newsAction">March 23, 2019 &#9679; Clare, Tommy</div>
               </div>
             </li>
-
-            <!--<li>
-              <img src="./home_jpg/frocca.jpg" style="opacity:0.27">
-              <div class="caption center-align">
-                <h3>Fr. Peter Rocca Announces Retirement</h3>
-
-                <div class="newsContent" class="light grey-text text-lighten-3">Rector of the Basilica, Fr. Rocca, who also serves as our chaplain, retired on July 1, 2019. We are so grateful for his service and dedication! <a href="https://www.nd.edu/stories/keeper-of-the-flame/" target="_blank">Read more here.</a></div>
-              </div>:
-              </div>
-            </li>-->
-
           </ul>
         </div>
       </div>
@@ -188,8 +159,7 @@ The Notre Dame Liturgical Choir is a continuation of the Chapel Choir, which ori
     <h2 id="aWord">From the Director</h2>
     <div id="directorNote">
         <div class="descriptionTextOuter">
-        <div class="descriptionTextOverflow" id="directorNoteDiv" onscroll="adjustArrows(this.id)">
-            <i id="directorNoteDivUp" class="material-icons scrollArrow scrollArrowUp hide-on-small-only">arrow_drop_up</i><i id="directorNoteDivDown" class="material-icons scrollArrow hide-on-small-only" style="bottom: 45px;">arrow_drop_down</i>
+        <div class="descriptionTextOverflow" id="directorNoteDiv">
             <span id="directorText"> "It's hard to believe that I am entering my ninth year as director of the incredible Notre Dame Liturgical Choir. <span id="invisibleDirectorReadMore"><br><br>I strive to continue to build upon the foundations of my teacher and friend Dr. Gail Walton and pray often that she is pleased with my efforts. The Liturgical Choir just keeps getting better and better, not because of anything I am doing but because the Choir is gifted with incredible young Notre Dame women and men. The current student leadership is responsible for this fantastic new website and for that I am so grateful." </span></span></div>
       <div style="margin-top:30px;" class="ReadMore hide-on-med-and-up" id="DirectorReadMore"><i class="material-icons">keyboard_arrow_down</i> Read More</div>
       <div style="margin:50px 0px 40px 0px;font-size:30px;">- Dr. Andrew McShane</div>
@@ -230,28 +200,6 @@ The Notre Dame Liturgical Choir is a continuation of the Chapel Choir, which ori
 
 
 </div>
-
-<script>
-    function adjustArrows(id) {
-       var element = document.getElementById(id);
-       var upArrowElement = document.getElementById(id + "Up");
-       var downArrowElement = document.getElementById(id + "Down");
-       if (element.scrollTop + element.clientHeight >= element.scrollHeight) {
-           downArrowElement.style.opacity = "0";
-       } else if (element.scrollTop == 0) {
-           upArrowElement.style.opacity = "0";
-       } else {
-           upArrowElement.style.opacity = "1";
-           downArrowElement.style.opacity = "1";
-       }
-    }
-
-    function manageArrows() {
-        adjustArrows("whoWeAreDiv");
-        adjustArrows("directorNoteDiv");
-    }
-</script>
-
 
 </body>
 
