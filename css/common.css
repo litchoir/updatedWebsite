@@ -286,7 +286,7 @@ iframe {
 }
 
 
-.newsAction a, .card-content a {
+.news-item-footer a, .card-content a {
   margin-right: 5px !important;
   text-transform: none !important;
   text-decoration: underline !important;
@@ -352,6 +352,17 @@ div.insideText p {
   background-color: #002b5c;
 }
 
+.news-item-flexbox {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 0 25px 0;
+}
+
+.inner-news-item-content {
+  text-align: center;
+}
 
 #people .card-content p {
   font-size: 1.4vw;
@@ -373,10 +384,6 @@ a#supportBtn {
   /* padding-left: 50px; */
 }
 
-/* #giveBtn {
-  margin-top: 25px;
-  display: none;
-} */
 
 #requestBtn, #reunionBtn {
   margin: auto;
@@ -413,12 +420,15 @@ a#supportBtn {
 }
 
 .slider .slides li .caption {
-  top: 8%;
+  top: 0%;
   overflow: auto;
   color: white;
+  height: 100%;
+  width: 80%;
+  left: 10%;
 }
 
-.slider .slides li .newsAction {
+.slider .slides li .news-item-footer {
   bottom: 10%;
 }
 
@@ -428,8 +438,8 @@ a#supportBtn {
 }
 
 
-.slider .newsContent {
-  margin-top: 10px !important;
+.slider .news-item-content {
+  margin: 0;
   font-size: 22px;
   height: 225px;
   overflow: auto;
@@ -439,11 +449,10 @@ a#supportBtn {
   justify-content: center;
 }
 
-.newsAction {
+.news-item-footer {
   font-weight: bold;
   color: white;
   font-size: 19px;
-  margin-top: 8%;
 }
 
 .descriptionTextOuter {
@@ -647,11 +656,6 @@ div#directorNote {
     display: none;
   }
 
-  .slider .newsContent {
-    font-size: 28px;
-    margin-top: -20px !important;
-  }
-
   .pagination {
     display: none !important;
   }
@@ -736,17 +740,40 @@ div#directorNote {
 
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 600px) {
   .slider .caption h3 {
-    display: none;
+    font-size: 30px;
   }
-  .slider .caption .newsAction {
-    display: none;
+  .slider .caption .news-item-content {
+    font-size: 22px;
   }
-  .slider .newsContent {
-    height: 400px;
+  .slider .caption .news-item-footer {
+    font-size: 18px;
   }
+}
 
+@media screen and (min-width: 601px) and (max-width: 992px) {
+  .slider .caption h3 {
+    font-size: 25px;
+  }
+  .slider .caption .news-item-content {
+    font-size: 20px;
+  }
+  .slider .caption .news-item-footer {
+    font-size: 18px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .slider .caption h3 {
+    font-size: 35px;
+  }
+  .slider .caption .news-item-content {
+    font-size: 25px;
+  }
+  .slider .caption .news-item-footer {
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -884,4 +911,3 @@ div#directorNote {
 #NotreDame {
   font-size: 37px;
 }
-
