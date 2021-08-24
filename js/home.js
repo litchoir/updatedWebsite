@@ -18,7 +18,7 @@
   function loadNews() {
     $.getJSON("data/home.json", (data) => {
       $('#slideList').html(
-        data.map(d =>
+        data.newsItems.map(d =>
           `<li>
             <img src="${d.imageUrl}" style="opacity:0.50">
             <div class="caption center-align">
@@ -34,6 +34,9 @@
         height: 450,
         interval: 8000
       });
+      $('#youtubeVideoContainer').html(
+        `<iframe width="100%" height="400" src="${data.featuredVideoLink}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+      );
     })
   }
 
