@@ -6,18 +6,36 @@
   $(document).ready(initialize);
   function initialize() {
     navbar();
+    loadNews();
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     $('.ReadMore').click(ReadMore);
     $('#expandMenu').click(expandMenu);
-    $('.slider').slider({
-      height: 450,
-      interval: 8000
-    });
     $(window).resize(navbar);
   }
 
   
+  function loadNews() {
+    $.getJSON("data/home.json", (data) => {
+      $('#slideList').html(
+        data.map(d =>
+          `<li>
+            <img src="${d.imageUrl}" style="opacity:0.50">
+            <div class="caption center-align">
+              <h3>${d.title}</h3>
+              <div class="newsContent" class="light grey-text text-lighten-3">
+                <div class="innerNewsContent">${d.content}</div>
+              <div class="center-align newsAction">${d.date} &#9679; ${d.author}</div>
+            </div>
+          </li>`
+        ).join("\n")
+      );
+      $('.slider').slider({
+        height: 450,
+        interval: 8000
+      });
+    })
+  }
 
 
   function ReadMore() {
