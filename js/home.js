@@ -19,13 +19,14 @@
     $.getJSON("data/home.json", (data) => {
       $('#slideList').html(
         data.newsItems.map(d =>
-          `<li>
-            <img src="${d.imageUrl}" style="opacity:0.50">
-            <div class="caption center-align">
-              <h3>${d.title}</h3>
-              <div class="news-item-content" class="light grey-text text-lighten-3">
-                <div class="inner-news-item-content">${d.content}</div>
-              <div class="center-align news-item-footer">${d.date} &#9679; ${d.author}</div>
+          `<li class="news-item">
+            <img src="${d.imageUrl}" style="opacity:0.25">
+            <div class="news-item-flexbox caption">
+                <h3 class="news-item-title">${d.title}</h3>
+                <div class="news-item-content light grey-text text-lighten-3">
+                  <div class="inner-news-item-content">${d.content}</div>
+                </div>
+                <div class="center-align news-item-footer">${d.date} &#9679; ${d.author}</div>
             </div>
           </li>`
         ).join("\n")
