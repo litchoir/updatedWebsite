@@ -1,0 +1,63 @@
+{
+    "newsItems": [
+        {
+            "imageUrl": "./img/home/litchoirpromo.jpeg",
+            "title": "Attention Singers!",
+            "content": "If you are a student at ND, Holy Cross, or St. Mary's, and are interested in auditioning for the Liturgical Choir, please e-mail Andrew McShane at amcshane@nd.edu.",
+            "date": "8/19/2021",
+            "author": "Rymsza, Lauren"
+        },
+        {
+            "imageUrl": "./img/home/streaming.jpg",
+            "title": "Liturgical Choir on Apple Music and Spotify!",
+            "content": "The Notre Dame Liturgical Choir's recordings are now digital! For links to the choir's albums on Apple Music, Spotify, and more, see the Recordings page.",
+            "date": "3/23/2019",
+            "author": "Clare, Tommy"
+        }
+    ],
+    "featuredVideoLink": "https://www.youtube.com/embed/1MZnc0gyU8M",
+    "tours": [
+        {
+            "year": 2019,
+            "location": "Florida",
+            "description": "In January of 2019, we toured sunny Florida! Highlights included concerts in Tallahassee, Ocala, Orlando, Tampa, Clearwater, Fort Myers, Ave Maria, and Miami, a tour of Ave Maria University, two days on the beach, and a day at Magic Kingdom!",
+            "image1Url": "./img/tours/florida1.jpg",
+            "image2Url": "./img/tours/florida2.jpg"
+        },
+        {
+            "year": 2018,
+            "location": "Spain",
+            "description": "Our journey through the heart of Spain featured performances in Madrid, Toledo, Valencia, Montserrat, Barcelona. Notably, we performed a set in La Sagrada Familia, the largest cathedral in Europe.",
+            "image1Url": "./img/tours/spain.jpg",
+            "image2Url": "./img/tours/spain1.jpg"
+        },
+        {
+            "year": 2017,
+            "location": "California",
+            "description": "In January of 2017, our California tour included stops in Los Angeles, Orange County, and San Francisco, featuring performances at many prominent cathedrals, as well as a trip to Disneyland!",
+            "image1Url": "./img/tours/disney.jpg",
+            "image2Url": "./img/tours/cali_tour.jpg"
+        },
+        {
+            "year": 2016,
+            "location": "Austria & Czech Republic",
+            "description": "Our 2016 international tour featured performances at prominent cathedrals in Vienna and Salzburg, Austria, and Prague, Czech Republic.",
+            "image1Url": "./img/tours/tour2016.jpg",
+            "image2Url": "./img/tours/tour2016group.jpg"
+        },
+        {
+            "year": 2015,
+            "location": "Texas",
+            "description": "Our journey through Texas involved stops in San Antonio, Austin, and Dallas. Over the week, we gave performaces at the Catholic Churches of St. Ignatius, St Rita, and Christ the King.",
+            "image1Url": "./img/tours/texas1.jpg",
+            "image2Url": "./img/tours/texas2.jpg"
+        },
+        {
+            "year": 2014,
+            "location": "France",
+            "description": "Our Choir's 2014 international tour included trips to Bayeux, Rouen, Lisieux, Solesmes, Chartres, and Paris - including a performance at Notre Dame Cathedral in Paris and La Madeleine.",
+            "image1Url": "./img/tours/architecture-building-city-672143.jpg",
+            "image2Url": "./img/tours/basilica_aka_france.jpg"
+        }
+    ]
+}

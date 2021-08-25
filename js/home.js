@@ -6,7 +6,7 @@
   $(document).ready(initialize);
   function initialize() {
     navbar();
-    loadNews();
+    loadHomeData();
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     $('.ReadMore').click(ReadMore);
@@ -15,8 +15,8 @@
   }
 
   
-  function loadNews() {
-    $.getJSON("data/home.json", (data) => {
+  function loadHomeData() {
+    $.getJSON("data/all.json", (data) => {
       $('#slideList').html(
         data.newsItems.map(d =>
           `<li class="news-item">
