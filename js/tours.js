@@ -11,8 +11,9 @@
 
   function loadToursData() {
     $.getJSON("data/all.json", (data) => {
+      const tours = Object.values(data.tours).sort((t1, t2) => t2 - t1);
       $('#all-tours').html(
-        data.tours.map((t) =>
+        tours.map((t) =>
           `<div class="smoothscroll">
             <br><br>
             <h2>${t.year}</h2>
