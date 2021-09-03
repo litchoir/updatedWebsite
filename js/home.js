@@ -17,19 +17,22 @@
   
   function loadHomeData() {
     $.getJSON("data/all.json", (data) => {
+      const newsItems = Object.values(data.newsItems).sort((n1, n2) => n2.date - n1.date);
       $('#slideList').html(
-        data.newsItems.map(d =>
-          `<li class="news-item">
+        newsItems.map(d => {
+          const dateObj = new Date(d.date);
+          const dateToDisplay = (dateObj.getMonth() + 1) + '/' + dateObj.getDate() + '/' + dateObj.getFullYear();
+          return `<li class="news-item">
             <img src="${d.imageUrl}" style="opacity:0.25">
             <div class="news-item-flexbox caption">
                 <h3 class="news-item-title">${d.title}</h3>
                 <div class="news-item-content light grey-text text-lighten-3">
                   <div class="inner-news-item-content">${d.content}</div>
                 </div>
-                <div class="center-align news-item-footer">${d.date} &#9679; ${d.author}</div>
+                <div class="center-align news-item-footer">${dateToDisplay} &#9679; ${d.author}</div>
             </div>
           </li>`
-        ).join("\n")
+        }).join("\n")
       );
       $('.slider').slider({
         height: 450,

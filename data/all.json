@@ -1,63 +1,63 @@
 {
-    "newsItems": [
-        {
+    "newsItems": {
+        "050876fa4ca30d29ef0d877db9d6de5777414e8121655859098f852b6feb02be": {
             "imageUrl": "./img/home/litchoirpromo.jpeg",
             "title": "Attention Singers!",
             "content": "If you are a student at ND, Holy Cross, or St. Mary's, and are interested in auditioning for the Liturgical Choir, please e-mail Andrew McShane at amcshane@nd.edu.",
-            "date": "8/19/2021",
+            "date": 1629345600000,
             "author": "Rymsza, Lauren"
         },
-        {
+        "c9259fc4c3dfc2a9dc0098f8b7e152c3da2ba1890934479819f18bbd3d456716": {
             "imageUrl": "./img/home/streaming.jpg",
             "title": "Liturgical Choir on Apple Music and Spotify!",
             "content": "The Notre Dame Liturgical Choir's recordings are now digital! For links to the choir's albums on Apple Music, Spotify, and more, see the Recordings page.",
-            "date": "3/23/2019",
+            "date": 1553313600000,
             "author": "Clare, Tommy"
         }
-    ],
-    "featuredVideoLink": "https://www.youtube.com/embed/472UUFjiN54",
-    "tours": [
-        {
+    },
+    "featuredVideoLink": "https://www.youtube.com/embed/1MZnc0gyU8M",
+    "tours": {
+        "cbf096b81696cd3ce5d0462eaa40253cf8b18a4c9ee21f7803d3fb74fb5da4e8": {
             "year": 2019,
             "location": "Florida",
             "description": "In January of 2019, we toured sunny Florida! Highlights included concerts in Tallahassee, Ocala, Orlando, Tampa, Clearwater, Fort Myers, Ave Maria, and Miami, a tour of Ave Maria University, two days on the beach, and a day at Magic Kingdom!",
             "image1Url": "./img/tours/florida1.jpg",
             "image2Url": "./img/tours/florida2.jpg"
         },
-        {
+        "a6b3945e82be95241c168242e6a93fad4f1ac05d3d93ef62a5da39ecd8de7548": {
             "year": 2018,
             "location": "Spain",
             "description": "Our journey through the heart of Spain featured performances in Madrid, Toledo, Valencia, Montserrat, Barcelona. Notably, we performed a set in La Sagrada Familia, the largest cathedral in Europe.",
             "image1Url": "./img/tours/spain.jpg",
             "image2Url": "./img/tours/spain1.jpg"
         },
-        {
+        "aadc0a8e8f9fbf807e380853689e7769431622caff1c59361ab62c2e2d04dba8": {
             "year": 2017,
             "location": "California",
             "description": "In January of 2017, our California tour included stops in Los Angeles, Orange County, and San Francisco, featuring performances at many prominent cathedrals, as well as a trip to Disneyland!",
             "image1Url": "./img/tours/disney.jpg",
             "image2Url": "./img/tours/cali_tour.jpg"
         },
-        {
+        "a6fb4091fd0ce401db7c365efdbf401fabf27b5b932e0fc2487be1aaa954f9c8": {
             "year": 2016,
             "location": "Austria & Czech Republic",
             "description": "Our 2016 international tour featured performances at prominent cathedrals in Vienna and Salzburg, Austria, and Prague, Czech Republic.",
             "image1Url": "./img/tours/tour2016.jpg",
             "image2Url": "./img/tours/tour2016group.jpg"
         },
-        {
+        "27460311c8f6c05de6b9b9554238cfe3136495c5143174d8ffc83ab395b6ac76": {
             "year": 2015,
             "location": "Texas",
             "description": "Our journey through Texas involved stops in San Antonio, Austin, and Dallas. Over the week, we gave performaces at the Catholic Churches of St. Ignatius, St Rita, and Christ the King.",
             "image1Url": "./img/tours/texas1.jpg",
             "image2Url": "./img/tours/texas2.jpg"
         },
-        {
+        "3c894579c79a565053431b3c9bbbfcd4ab4383cb786deb06a305613d45f9bc2e": {
             "year": 2014,
             "location": "France",
             "description": "Our Choir's 2014 international tour included trips to Bayeux, Rouen, Lisieux, Solesmes, Chartres, and Paris - including a performance at Notre Dame Cathedral in Paris and La Madeleine.",
             "image1Url": "./img/tours/architecture-building-city-672143.jpg",
             "image2Url": "./img/tours/basilica_aka_france.jpg"
         }
-    ]
+    }
 }
