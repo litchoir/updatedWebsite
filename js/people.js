@@ -3,13 +3,11 @@
   function initialize() {
     navbar();
     loadPeopleData();
-    //adjustPeople();
     $('.parallax').parallax();
     $('.ReadMore').click(ReadMore);
     $('#directorBtn').click(buttonRun);
     $('#expandMenu').click(expandMenu);
     $(window).resize(navbar);
-    //$(window).resize(adjustPeople);
   }
 
   function needsL2Offset(i, len) {

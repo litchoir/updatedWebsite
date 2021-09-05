@@ -370,6 +370,10 @@ div.insideText p {
   color: white !important;
 }
 
+#people .card-content {
+  height: 66px;
+}
+
 #people .card-action {
   background-color: rgb(177, 141, 3) !important;
   display: none;
