@@ -33,7 +33,7 @@
         '#dynamic-officers': officers
       }
 
-      for (let selector of contentMap) {
+      for (let selector in contentMap) {
         $(selector).html(
           contentMap[selector].map((d, i, arr) => `
             <div class="col s6 m4 l2 ${
