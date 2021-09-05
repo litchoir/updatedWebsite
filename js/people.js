@@ -3,13 +3,13 @@
   function initialize() {
     navbar();
     loadPeopleData();
-    adjustPeople();
+    //adjustPeople();
     $('.parallax').parallax();
     $('.ReadMore').click(ReadMore);
     $('#directorBtn').click(buttonRun);
     $('#expandMenu').click(expandMenu);
     $(window).resize(navbar);
-    $(window).resize(adjustPeople);
+    //$(window).resize(adjustPeople);
   }
 
   function needsL2Offset(i, len) {
@@ -119,10 +119,6 @@
     $('.menubtn').css('padding-bottom','0px');
     $('.navbar').css('display','block');
 
-  }
-
-  function adjustPeople() {
-    $('.card-content').css('height',$('.litcom').outerHeight(true));
   }
 
 })();
