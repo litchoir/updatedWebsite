@@ -2,14 +2,72 @@
   $(document).ready(initialize);
   function initialize() {
     navbar();
+    loadPeopleData();
     adjustPeople();
     $('.parallax').parallax();
     $('.ReadMore').click(ReadMore);
     $('#directorBtn').click(buttonRun);
-     $('#expandMenu').click(expandMenu);
-
+    $('#expandMenu').click(expandMenu);
     $(window).resize(navbar);
     $(window).resize(adjustPeople);
+  }
+
+  function needsLargeOffset(i, len) {
+    return len % 4 === 2 && i === len - 2
+  }
+
+  function needsMediumOffset(i, len) {
+    return len % 3 === 2 && i === len - 2
+  }
+
+  function loadPeopleData() {
+    $.getJSON("data/all.json", (data) => {
+
+      const directors = Object.values(data.directors).sort((d1, d2) => d1.sortOrder - d2.sortOrder);
+      const graduateStudents = Object.values(data.graduateStudents).sort((g1, g2) => g1.sortOrder - g2.sortOrder);
+      const officers = Object.values(data.officers).sort((o1, o2) => o1.sortOrder - o2.sortOrder);
+      
+      const contentMap = {
+        '#dynamic-directors': directors,
+        '#dynamic-graduate-students': graduateStudents,
+        '#dynamic-officers': officers
+      }
+
+      for (let selector of contentMap) {
+        $(selector).html(
+          contentMap[selector].map((d, i, arr) => `
+            <div class="col s6 m4 l2 ${
+                needsLargeOffset(i, arr.length) 
+                  ? 'offset-l4' 
+                  : ' '
+              } ${
+                needsMediumOffset(i, arr.length)
+                ? 'offset-m2'
+                : ' '
+              }
+              ">
+              <div class="card">
+                <div class="card-image">
+                  <img class="activator" src="${d.imageUrl}">
+                    <span class="card-title">${d.name}</span>
+                </div>
+                <div class="card-content">
+                  <i class="white-text material-icons activator infoIcon">info_outline</i>
+                  <p class="activator">${d.position}<br></p>
+                </div>
+                <div class="card-reveal">
+                  <span class="card-title">
+                    <i class="material-icons closeIcon">close</i>
+                    ${d.name.split(' ').slice(0, -1)}<br>${d.name.split(' ').slice(-1)[0]}
+                  </span>
+                  ${d.biography}
+                </div>
+              </div>
+            </div>`
+          )
+        )
+      }
+    })
   }
 
   function ReadMore() {
@@ -57,24 +115,6 @@
 
   function adjustPeople() {
     $('.card-content').css('height',$('.litcom').outerHeight(true));
-    // if ($(window).width() >= 900) {
-    //   $('.peopleType').css('display','block');
-    //   $('#enlarge').css('display','none');
-    // }
-    // else {
-    //   if ($('.peopleType').css('display') != 'none') {
-    //     $('.peopleType').css('display','none');
-    //     $('#enlarge').css('display','block');
-    //     $(location).attr('href', './people.html#enlarge');
-    //   }
-    //   else {
-    //     $('.peopleType').css('display','none');
-    //     $('#enlarge').css('display','block');
-    //   }
-    //
-    //
-    // }
-
   }
 
 })();

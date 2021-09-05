@@ -59,5 +59,109 @@
             "image1Url": "./img/tours/architecture-building-city-672143.jpg",
             "image2Url": "./img/tours/basilica_aka_france.jpg"
         }
+    },
+    "directors": {
+        "5e1f6001c0d6e8385344b197e646929f4f343c659edb78d767f1157b764cafe5": {
+            "name": "Andrew McShane",
+            "position": "Lead Director",
+            "biography": "Andrew (Andy) McShane is the Director of Music at the Basilica of the Sacred Heart at the University of Notre Dame and Director of the Notre Dame Liturgical Choir. Andrew earned the Bachelor of Music degree in Church Music at Wayne State University in Detroit as a student of Ray Ferguson. At the University of Notre Dame he earned the Master of Music degree in Organ Performance and Literature as a student of Craig Cramer and Gail Walton. Andrew completed his education at the Northwestern University School of Music earning the Doctor of Music degree in Organ and Church Music.",
+            "imageUrl": "./img/people/Andy2020.JPG",
+            "sortOrder": 1
+        },
+        "d51f196f961ef1cf798038c0e9bba7f16fade9b15b2ec47c4d27e4a18929eb6a": {
+            "name": "Jonathan Hehn",
+            "position": "Assistant Director",
+            "biography": "Jonathan Hehn (OSL) is a musician and liturgist currently serving as Assistant Director of the Liturgical Choir at the University of Notre Dame. He is a brother in the Order of Saint Luke and holds degrees in music (BM, DM) from the Florida State University and theology (MSM) from the University Notre Dame. Jonathan has studied organ with Michael Corzine and Craig Cramer. He also holds the Choirmaster certificate of the American Guild of Organists and has studied choral conducting with Kevin Fenton, Nancy Menk, and Andre Thomas. Additional time was spent at the Universität Mozarteum in Salzburg, Austria. As a recitalist, Jonathan appears frequently both as a soloist and chamber musician, having performed in Austria and across the United States. He has won prizes in both regional and national competitions in organ performance. An active scholar as well, Jonathan has presented in the area of sacred music and liturgy and both national and international conferences, and his written work has appeared in The American Organist, The Hymn, These Days, Call to Worship, and other print and online periodicals. The Hymn Society awarded him a Lovelace Scholarship in 2011 and 2014, and the Emerging Scholars Award in 2012. He currently edits Sacramental Life, a quarterly magazine published by the Order of Saint Luke. Jonathan was the founder and long time director of the Tallahassee Sacred Music Conference. He is currently a candidate for rostered ministry in the Evangelical Lutheran Church in America. He resides in South Bend, Indiana with his wife, three children, and dog.",
+            "imageUrl": "./img/people/Jonathan2020.JPG",
+            "sortOrder": "2"
+        }
+    },
+    "graduateStudents": {
+        "c68cff432e573aa0dbc4bc6738b240caf5889590deeb7869715d30a8b124c143": {
+            "name": "Maggie Werth",
+            "position": "MSM",
+            "biography": "Maggie is a first-year Masters organ student in the Sacred Music program at Notre Dame. She holds a BM in Organ Performance and Church Music from the University of Kansas, where she graduated in 2020. Maggie hails from Topeka, Kansas, where she enjoys singing and playing with the Most Pure Heart of Mary Schola Cantorum while on academic breaks. She is delighted to work with the Notre Dame Liturgical Choir as they revel in the joy and beauty of singing unending praise to God!",
+            "imageUrl": "./img/people/MaggieW2020.JPG",
+            "sortOrder": 1
+        },
+        "6d9da5df71b924325d6bd2069122e087fa3feb81b0391ad114a55b6c8e40ccfd": {
+            "name": "Christian Copeley",
+            "position": "MSM",
+            "biography": "Christian is a second-year graduate student at Notre Dame pursuing a master's degree in Sacred Music. He holds a Bachelor of Arts in Music and Graphic Design from Assumption University where he served as the organ scholar. During the summer Christian plays for Masses at his home parish, Christ the King, in Concord, New Hampshire, and he feels blessed to have the opportunity to work with the Liturgical Choir this year.",
+            "imageUrl": "./img/people/ChristianC2020.JPG",
+            "sortOrder": 2
+        }
+    },
+    "officers": {
+        "ac6ac87f27dea9bd40259fe263ed4a6e208b506357541236a53e30d7584850bc": {
+            "name": "Drew Obert",
+            "position": "President",
+            "biography": "Drew is a senior living in Dunne Hall studying Sociology and Economics. He is originally from North Little Rock, Arkansas, sings Baritone, and is excited to sing in his fourth year with the choir.",
+            "imageUrl": "./img/people/DrewBert2020.JPG",
+            "sortOrder": 1
+        },
+        "d074c70c2f0e994cc40bcc252a2720f694cf9ed0dc459106c0db650659b863ea": {
+            "name": "Savannah Anez",
+            "position": "Vice President",
+            "biography": "n/a",
+            "imageUrl": "./img/people/SaVANNah2020.JPG",
+            "sortOrder": 2
+        },
+        "82905fe2d1c8796f1518617c3cf61a000c1d08370643383c61dd52341adb5fa1": {
+            "name": "Maggie Laurence",
+            "position": "Secretary (Fall)",
+            "biography": "Maggie is a junior currently living in McGlinn Hall but originally from Minocqua, Wisconsin. She has a double major in Mathematics and Film, Television, and Theatre. She loves Stroope and being an honorary member of Tenor Twosdays!",
+            "imageUrl": "./img/people/MaggieL2020.JPG",
+            "sortOrder": 3
+        },
+        "9a92365c199ffc97d0b85a24bd7b3f5d93f03d56d750c1285af7dc01f9adcdab": {
+            "name": "Evan McKenna",
+            "position": "Secretary (Spring)",
+            "biography": "Evan McKenna is a junior from Tennessee living in Keenan Hall, with a double major in English and Psychology. He enjoys running, reading, writing, and, most of all, singing with the Liturgical Choir.",
+            "imageUrl": "./img/people/EvanM2020.JPG",
+            "sortOrder": 4
+        },
+        "ec5daa8452478de14b26d97b4408c8696187bc2654e47978ea556ec98c0c2f21": {
+            "name": "Jack Consolie",
+            "position": "Tour Director",
+            "biography": "n/a",
+            "imageUrl": "./img/people/JackC2020.JPG",
+            "sortOrder": 5
+        },
+        "085533a45ecf812fb1e218849ffe6494ab3d9f020d85ed967d87b28002f8c056": {
+            "name": "Elizabeth Hentges",
+            "position": "Treasurer",
+            "biography": "n/a",
+            "imageUrl": "./img/people/ElizabethH2020.JPG",
+            "sortOrder": 6
+        },
+        "32f41ba4227e0ef23c6a3314c20cbc7319053dbcdbb496a4da7a911aa8342b00": {
+            "name": "Kieran Emmons",
+            "position": "Business Manager",
+            "biography": "n/a",
+            "imageUrl": "./img/people/Kieran2020.JPG",
+            "sortOrder": 7
+        },
+        "216e893a37aaef1c8f84312bdac902a3585e7c019c3de2a9d3b0ef4e1712fc49": {
+            "name": "Katie Hyry",
+            "position": "Alumni Relations",
+            "biography": "n/a",
+            "imageUrl": "./img/people/KatyH2020.JPG",
+            "sortOrder": 8
+        },
+        "d2f41a49374d1a610575b4fe6f5a725005a700f84e25515bd5027c870feadd4e": {
+            "name": "Lauren Rymsza",
+            "position": "Webmaster",
+            "biography": "Lauren is a junior studying Electrical Engineering. She lives in McGlinn Hall, and loves keeping the world up to date on all things Lit Choir!",
+            "imageUrl": "./img/people/LaurenR2020.JPG",
+            "sortOrder": 9
+        },
+        "08dc8726194d6b84f973fdea2e783fff6eaec8326ba24c7f121eedf478fbdde9": {
+            "name": "Heather Christman",
+            "position": "Liturgical Commissioner",
+            "biography": "Heather is a senior from Minnesota living in Pasquerilla West Hall (peace, love, dub!) and is studying Theology and Music with a minor in Education, Schooling, and Society.",
+            "imageUrl": "./img/people/JackC2020.JPG",
+            "sortOrder": 10
+        }
     }
 }
