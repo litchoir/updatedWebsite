@@ -12,8 +12,12 @@
     $(window).resize(adjustPeople);
   }
 
-  function needsLargeOffset(i, len) {
-    return len % 4 === 2 && i % 4 === 0;
+  function needsL2Offset(i, len) {
+    return len % 4 === 2 && i % 4 === 0 && i !== len - 2;
+  }
+
+  function needsL4Offset(i, len) {
+    return len % 4 === 2 && i === len - 2;
   }
 
   function needsMediumOffset(i, len) {
@@ -37,9 +41,13 @@
         $(selector).html(
           contentMap[selector].map((d, i, arr) => `
             <div class="col s6 m4 l2 ${
-                needsLargeOffset(i, arr.length) 
+                needsL4Offset(i, arr.length) 
                   ? 'offset-l4' 
                   : ' '
+              } ${
+                needsL2Offset(i, arr.length)
+                ? 'offset-l2'
+                : ' '
               } ${
                 needsMediumOffset(i, arr.length)
                 ? 'offset-m2'
