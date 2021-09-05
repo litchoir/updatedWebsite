@@ -13,7 +13,7 @@
   }
 
   function needsLargeOffset(i, len) {
-    return len % 4 === 2 && i === len - 2
+    return len % 4 === 2 && i % 4 === 0;
   }
 
   function needsMediumOffset(i, len) {
