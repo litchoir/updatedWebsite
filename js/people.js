@@ -23,8 +23,12 @@
   }
 
   function loadPeopleData() {
-    $.getJSON("data/all.json", (data) => {
-
+    $.getJSON("https://lc-admin-website-dynamic-assets.s3.amazonaws.com/data/all.json", (data) => {
+      
+    /* Background Image */
+      $('#parallax-image').attr('src', data.peopleBackgroundImageUrl);
+    
+      /* Directors, Grad Students, Officers */
       const directors = Object.values(data.directors).sort((d1, d2) => d1.sortOrder - d2.sortOrder);
       const graduateStudents = Object.values(data.graduateStudents).sort((g1, g2) => g1.sortOrder - g2.sortOrder);
       const officers = Object.values(data.officers).sort((o1, o2) => o1.sortOrder - o2.sortOrder);
@@ -54,7 +58,7 @@
               ">
               <div class="card">
                 <div class="card-image">
-                  <img class="activator" src="${d.imageUrl}">
+                  <img class="activator" src="${d.imageUrls[0]}">
                     <span class="card-title">${d.name}</span>
                 </div>
                 <div class="card-content">

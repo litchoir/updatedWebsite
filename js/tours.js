@@ -10,7 +10,12 @@
   }
 
   function loadToursData() {
-    $.getJSON("data/all.json", (data) => {
+    $.getJSON("https://lc-admin-website-dynamic-assets.s3.amazonaws.com/data/all.json", (data) => {
+      
+      /* Background Image */
+      $('#parallax-image').attr('src', data.toursBackgroundImageUrl);
+
+      /* Tours */
       const tours = Object.values(data.tours).sort((t1, t2) => t2 - t1);
       $('#all-tours').html(
         tours.map((t) =>
@@ -26,10 +31,10 @@
         
             <div class="row">
               <div class="col m4 offset-m2 s12">
-                <img src="${t.image1Url}" style="width:100%">
+                <img src="${t.imageUrls[0]}" style="width:100%">
               </div>
               <div class="col m4 s6 hide-on-small-only">
-                <img src="${t.image2Url}" style="width:100%;">
+                <img src="${t.imageUrls[1]}" style="width:100%;">
               </div>
             </div>
           </div>`

@@ -3,6 +3,7 @@
   $(document).ready(initialize);
   function initialize() {
     navbar();
+    loadAboutData();
     $('.parallax').parallax();
     $('.collapsible').collapsible();
     $(window).resize(navbar);
@@ -10,6 +11,22 @@
     $('.collapsible-header').click(switchIcons);
   }
 
+  function loadAboutData() {
+    $.getJSON("https://lc-admin-website-dynamic-assets.s3.amazonaws.com/data/all.json", (data) => {
+      /* Background Image */
+      $('#parallax-image').attr('src', data.aboutBackgroundImageUrl);
+
+      /* Current School Year */
+      const date = new Date();
+      const [m, y] = [date.getMonth(), date.getFullYear()];
+      const [lastYear, thisYear, nextYear] = [y - 1, y, y + 1];
+      const isSecondHalfOfYear = m >= 6;
+      $('#current-school-year').html( isSecondHalfOfYear ? `${thisYear}-${nextYear}` : `${lastYear}-${thisYear}`);
+
+      /* Audition Date */
+      $('#current-audition-date').html(data.aboutAuditionDeadline);
+    })
+  }
 
   function navbar() {
 
