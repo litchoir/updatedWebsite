@@ -16,14 +16,18 @@
 
   
   function loadHomeData() {
-    $.getJSON("data/all.json", (data) => {
+    $.getJSON("https://lc-admin-website-dynamic-assets.s3.amazonaws.com/data/all.json", (data) => {
+      /* Background Image */
+      $('#parallax-image').attr('src', data.homeBackgroundImageUrl);
+
+      /* News Items */
       const newsItems = Object.values(data.newsItems).sort((n1, n2) => n2.date - n1.date);
       $('#slideList').html(
         newsItems.map(d => {
           const dateObj = new Date(d.date);
           const dateToDisplay = (dateObj.getMonth() + 1) + '/' + dateObj.getDate() + '/' + dateObj.getFullYear();
           return `<li class="news-item">
-            <img src="${d.imageUrl}" style="opacity:0.25">
+            <img src="${d.imageUrls[0]}" style="opacity:0.25">
             <div class="news-item-flexbox caption">
                 <h3 class="news-item-title">${d.title}</h3>
                 <div class="news-item-content light grey-text text-lighten-3">
@@ -34,10 +38,14 @@
           </li>`
         }).join("\n")
       );
+
+      /* Animation of image slider */
       $('.slider').slider({
         height: 450,
         interval: 8000
       });
+
+      /* Featured Video Link */
       $('#youtubeVideoContainer').html(
         `<iframe width="100%" height="400" src="${data.featuredVideoLink}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
       );
